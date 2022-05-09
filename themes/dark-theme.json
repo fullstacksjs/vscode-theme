@@ -637,7 +637,8 @@
       "name": "Keyword Control",
       "scope": "keyword.control",
       "settings": {
-        "foreground": "#ff8888"
+        "foreground": "#ff8888",
+        "fontStyle": "italic"
       }
     },
     {
@@ -1746,6 +1747,50 @@
       "scope": "markup.italic.markdown",
       "settings": {
         "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "storage.type.function.arrow",
+      "settings": {
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": "support.variable.object.node, meta.object-literal.key, punctuation.separator, support, variable.other, storage.type.function.arrow",
+      "settings": {
+        "foreground": "#eee"
+      }
+    },
+    {
+      "scope": "string.quoted, string.template",
+      "settings": {
+        "foreground": "#c6ff90"
+      }
+    },
+    {
+      "scope": "support.type.property-name.json, entity.name.function, support.function",
+      "settings": {
+        "foreground": "#ffc17a"
+      }
+    },
+    {
+      "scope": "support.type, entity.name.type.ts, support.type.primitive.ts, entity.name.type, constant, entity.other.inherited-class",
+      "settings": {
+        "foreground": "#35eeff"
+      }
+    },
+    {
+      "scope": "storage, keyword.control, storage.type",
+      "settings": {
+        "fontStyle": "",
+        "foreground": "#c7a9f5"
+      }
+    },
+    {
+      "scope": "support.variable, support.class, entity.name.tag",
+      "settings": {
+        "fontStyle": "bold",
+        "foreground": "#ff7474"
       }
     }
   ],
