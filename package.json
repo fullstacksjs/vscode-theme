@@ -1,0 +1,21 @@
+{
+  "name": "fullstacksjs-vscode",
+  "displayName": "fullstacksjs-vscode",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.61.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "FullstacksJS Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-theme.json"
+      }
+    ]
+  }
+}
