@@ -1,6 +1,7 @@
 {
   "name": "fullstacksjs-vscode",
   "displayName": "fullstacksjs-vscode",
+  "repository": "https://github.com/ASafaeirad/vscode-fullstacksjs-theme",
   "description": "",
   "version": "0.0.1",
   "engines": {
