@@ -20,5 +20,11 @@
         "path": "./themes/dark-theme.json"
       }
     ]
+  },
+  "scripts": {
+    "spell": "cspell '*.md' --no-progress"
+  },
+  "devDependencies": {
+    "cspell": "^5.21.1"
   }
 }
