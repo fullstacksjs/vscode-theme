@@ -603,7 +603,7 @@
     },
     {
       "name": "Classes",
-      "scope": "support.class, entity.name.type.class",
+      "scope": "support.class",
       "settings": {
         "foreground": "#ffffff"
       }
@@ -1770,7 +1770,7 @@
     {
       "scope": "support.type.property-name.json, entity.name.function, support.function",
       "settings": {
-        "foreground": "#ffc17a"
+        "foreground": "#ffa478"
       }
     },
     {
