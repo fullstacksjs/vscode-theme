@@ -4,6 +4,7 @@
   "repository": "https://github.com/ASafaeirad/vscode-fullstacksjs-theme",
   "description": "",
   "version": "0.0.1",
+  "publisher": "FullstacksJS",
   "engines": {
     "vscode": "^1.61.0"
   },
