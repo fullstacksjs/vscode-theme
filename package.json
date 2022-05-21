@@ -5,7 +5,7 @@
   "description": "FullstacksJS community VSCode theme based on FlatRemix",
   "version": "0.0.2",
   "publisher": "FullstacksJS",
-  "icon": "https://raw.githubusercontent.com/fullstacksjs/vscode-theme/main/assets/icon.png",
+  "icon": "assets/icon.png",
   "engines": {
     "vscode": "^1.61.0"
   },
