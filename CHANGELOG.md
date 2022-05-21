@@ -1,5 +1,10 @@
 # Change Log
 
+## [v0.0.6]
+
+- Fix string punctuation colors.
+- Remove italic for parameters.
+
 ## [v0.0.5]
 
 - Fix wrong function color.
