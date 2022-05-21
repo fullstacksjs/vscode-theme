@@ -14,7 +14,7 @@
   "contributes": {
     "themes": [
       {
-        "label": "FullstacksJS Theme",
+        "label": "FullstacksJS",
         "uiTheme": "vs-dark",
         "path": "./themes/dark-theme.json"
       }
