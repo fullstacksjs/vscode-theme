@@ -97,13 +97,6 @@
       }
     },
     {
-      "name": "punctuation.definition",
-      "scope": "punctuation.definition.string.begin,punctuation.definition.string.end",
-      "settings": {
-        "foreground": "#83d6ff"
-      }
-    },
-    {
       "name": "Text",
       "scope": "variable.parameter.function, text.html.derivative",
       "settings": {
