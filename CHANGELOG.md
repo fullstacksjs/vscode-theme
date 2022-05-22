@@ -1,5 +1,9 @@
 # Change Log
 
+## [v0.0.7]
+
+- Fix identifier colors for function variables.
+
 ## [v0.0.6]
 
 - Fix string punctuation colors.
