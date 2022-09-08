@@ -1319,6 +1319,12 @@
       }
     },
     {
+      "scope": "entity.name.function.tagged-template.tsx",
+      "settings": {
+        "foreground": "#FFA478"
+      }
+    },
+    {
       "name": "Reset JavaScript string interpolation expression",
       "scope": [
         "meta.template.expression"
