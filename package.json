@@ -3,7 +3,7 @@
   "displayName": "FullstacksJS Theme",
   "repository": "https://github.com/fullstacksjs/vscode-theme",
   "description": "FullstacksJS community VSCode theme based on FlatRemix",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "publisher": "FullstacksJS",
   "icon": "assets/icon.png",
   "engines": {
