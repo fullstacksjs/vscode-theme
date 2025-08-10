@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "publisher": "FullstacksJS",
   "license": "MIT",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/fullstacksjs/vscode-theme.git"
@@ -36,21 +37,23 @@
       {
         "label": "FullstacksJS Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/dark-theme-modern.json"
+        "path": "./themes/generated/main.json"
       },
       {
         "label": "FullstacksJS Legacy",
         "uiTheme": "vs-dark",
-        "path": "./themes/dark-theme-legacy.json"
+        "path": "./themes/legacy.json"
       }
     ]
   },
   "scripts": {
+    "dev": "node --watch --experimental-strip-types src/generate.ts",
     "build": "vsce package",
     "publish": "vsce publish"
   },
   "devDependencies": {
-    "@vscode/vsce": "3.6.0",
-    "@types/vscode": "1.102.0"
+    "@types/node": "24.2.1",
+    "@types/vscode": "1.102.0",
+    "@vscode/vsce": "3.6.0"
   }
 }
