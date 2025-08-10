@@ -14,7 +14,7 @@ export const shell: TokenColor[] = [
     name: 'Shell Keywords',
     scope: 'punctuation.definition.string.heredoc.delimiter.shell',
     settings: {
-      foreground: Foregrounds.Orange,
+      foreground: Foregrounds.Magenta,
       fontStyle: 'bold',
     },
   },

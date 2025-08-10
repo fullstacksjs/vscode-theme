@@ -81,7 +81,6 @@ export const base: TokenColor[] = [
     scope: 'entity.name.tag, keyword.other.doctype',
     settings: {
       foreground: Foregrounds.Red,
-      fontStyle: 'bold',
     },
   },
   {

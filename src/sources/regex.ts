@@ -24,7 +24,7 @@ export const regex: TokenColor[] = [
     scope:
       'constant.other.character-class.regexp, keyword.operator.quantifier.regexp,keyword.operator.or.regexp, punctuation.definition.group.assertion.regexp',
     settings: {
-      foreground: Foregrounds.Red,
+      foreground: Foregrounds.Magenta,
       fontStyle: 'bold',
     },
   },

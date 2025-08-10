@@ -82,7 +82,7 @@ export const css: TokenColor[] = [
   },
   {
     name: 'CSS At Rule',
-    scope: 'meta.at-rule.body.css',
+    scope: 'meta.at-rule.body.css, meta.at-rule.header.css',
     settings: {
       foreground: Foregrounds.Neutral,
     },
