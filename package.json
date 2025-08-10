@@ -48,7 +48,7 @@
   },
   "scripts": {
     "dev": "node --watch --experimental-strip-types src/generate.ts",
-    "build": "vsce package",
+    "build": "node --experimental-strip-types src/generate.ts && vsce package",
     "publish": "vsce publish"
   },
   "devDependencies": {
