@@ -1,13 +1,14 @@
-const Palette = {
+export const Palette = {
   Orange: { 600: '#ffa478' },
-  Yellow: { 600: '#ffd06b' },
+  Yellow: { 100: '#ffdf9c', 600: '#ffd06b' },
   Blue: { 500: '#66deff', 600: '#4fd9ff' },
-  Cyan: { 600: '#14FFDE', 700: '#2dced0' },
+  Cyan: { 100: '#adfff4', 600: '#14FFDE', 700: '#2dced0' },
   Green: { 600: '#c6ff90', 700: '#a9ff78' },
-  White: { 600: '#f8f8f8', 900: '#ffffff' },
-  Red: { 500: '#e17e85', 600: '#ff7272' },
+  Red: { 100: '#ff94a6', 500: '#e17e85', 600: '#ff7272' },
   Magenta: { 500: '#a7a7ff', 600: '#a6a6ff' },
-  Black: {
+  Gray: {
+    100: '#ffffff',
+    200: '#f8f8f8',
     400: '#556570',
     500: '#313744',
     600: '#23252e',
@@ -28,26 +29,26 @@ export const Foregrounds = {
   Blue: Palette.Blue['600'],
   Cyan: Palette.Cyan['600'],
   Green: Palette.Green['600'],
-  Neutral: Palette.White['900'],
+  Neutral: Palette.Gray['100'],
   Magenta: Palette.Magenta['600'],
-  Muted: withAlpha(Palette.White['900'], 0.3),
+  Muted: withAlpha(Palette.Gray['100'], 0.3),
   Red: Palette.Red['600'],
 };
 
 export const UIColors = {
-  Background: Palette.Black['600'],
-  FocusBackground: withAlpha(Palette.Black['900'], 0.3),
-  Border: Palette.Black['700'],
+  Background: Palette.Gray['600'],
+  FocusBackground: withAlpha(Palette.Gray['900'], 0.3),
+  Border: Palette.Gray['700'],
   Transparent: '#00000000',
-  Foreground: Palette.White['900'],
+  Foreground: Palette.Gray['100'],
 };
 
 export const ShellColors = {
-  White: Palette.White['600'],
-  BrightWhite: Palette.White['900'],
+  White: Palette.Gray['200'],
+  BrightWhite: Palette.Gray['100'],
 
-  Black: Palette.Black['400'],
-  BrightBlack: Palette.Black['500'],
+  Black: Palette.Gray['400'],
+  BrightBlack: Palette.Gray['500'],
 
   Red: Palette.Red['600'],
   BrightRed: Palette.Red['500'],
