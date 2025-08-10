@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "urn:fontconfig:fonts.dtd">
+
+<!-- /etc/fonts/fonts.conf file to configure system font access -->
+<fontconfig>
+	<description>Default configuration file</description>
+	<dir>/usr/share/fonts</dir>
+	<dir>/usr/local/share/fonts</dir>
+	<dir prefix="xdg">fonts</dir>
+	<!-- the following element will be removed in the future -->
+	<dir>~/.fonts</dir>
+	<match target="pattern">
+		<test qual="any" name="family">
+			<string>mono</string>
+		</test>
+		<edit name="family" mode="assign" binding="same">
+			<string>monospace</string>
+		</edit>
+	</match>
+</fontconfig>
+

@@ -1,0 +1,40 @@
+/* Comment */
+@import "tailwindcss";
+
+@property --rotation {
+  inherits: false;
+  initial-value: 45deg;
+  syntax: "<angle>";
+}
+
+html {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  font-size: clamp(14px, calc(10px + 0.4vw), 16px);
+}
+
+:root {
+  --text-primary: #000;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --text-primary: #fff;
+  }
+}
+
+@layer components {
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+#id .class div [attr~="value"] :not(:has([attr]:nth-child(2n-1)))::after:hover {
+  content: attr(data-color, var(--text-primary));
+}

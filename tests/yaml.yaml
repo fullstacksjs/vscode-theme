@@ -1,0 +1,33 @@
+---
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+martin: { name: Martin D'vloper, job: Developer, skill: Elite }
+fruits: ["Apple", "Orange", "Strawberry", "Mango"]
+
+jobs:
+  supabase:
+    runs-on: ubuntu-20.04
+    environment: ${{ (github.ref == 'refs/heads/main') && 'Production' || 'Preview' }}
+    env:
+      SUPABASE_PROJECT_ID: ${{ vars.SUPABASE_PROJECT_ID }}
+
+    steps:
+      - uses: actions/checkout@v3
+      - run: supabase db push
+
+    employed: True
+    foods:
+      - Apple
+    languages:
+      perl: 10
+    education: |
+      4 GCSEs
+      3 A-Levels
+      BSc in the Internet of Things
+    fold_newlines: >
+      this is really a
+      single line of text
+      despite appearances
