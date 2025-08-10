@@ -1,10 +1,10 @@
 /* Comment */
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @property --rotation {
   inherits: false;
   initial-value: 45deg;
-  syntax: "<angle>";
+  syntax: '<angle>';
 }
 
 html {
@@ -35,6 +35,6 @@ html {
   }
 }
 
-#id .class div [attr~="value"] :not(:has([attr]:nth-child(2n-1)))::after:hover {
+#id .class div [attr~='value'] :not(:has([attr]:nth-child(2n-1)))::after:hover {
   content: attr(data-color, var(--text-primary));
 }

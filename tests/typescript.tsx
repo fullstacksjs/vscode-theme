@@ -3,26 +3,28 @@
 /* prettier-ignore */
 
 import * as React from 'react';
-import { cn } from "@blackhole/shared/cn";
+import { cn } from '@blackhole/shared/cn';
 
 namespace Namespace {}
 
 export const enum Enum {
   A = 1,
   B = 4,
-  C = "C",
+  C = 'C',
   D = A | B,
 }
 
 type Union<
   T extends unknown[],
-  U = (args: { x: boolean }) => void | undefined
+  U = (args: { x: boolean }) => void | undefined,
 > = Enum.A | (Enum.B & Enum.C);
 const a: Union<[Enum.A], (args: { x: boolean }) => void | undefined> = Enum.A;
 
 var regex = /^(?<color>\d\d\w)|(?=[12]color-){2,4}.+[]*(?<=a)(?!u)b$/gim;
+const urlRegex =
+  /^(?<protocol>https?:\/\/)?(?<domain>[a-zA-Z0-9.-]+)(?<path>\/.*)?$/;
 
-const strings = `Template ${Enum.A + 10}` + "Double" + "Single";
+const strings = `Template ${Enum.A + 10}` + 'Double' + 'Single';
 
 abstract class BaseClass {
   protected abstract foo: string;
@@ -38,8 +40,8 @@ export class Class extends BaseClass implements Interface {
 
   constructor() {
     super();
-    this.foo = "foo";
-    this.bar = "bar";
+    this.foo = 'foo';
+    this.bar = 'bar';
   }
 }
 
@@ -54,10 +56,10 @@ function f<T, K extends keyof T>(x: T): { x: T; y?: K } {
         (typeof T)[keyof T],
         never
       >];
-      Object.entries({ [Enum.A]: 1, ["Enum.B"]: 2, [Enum.C]: 3 }).map(
+      Object.entries({ [Enum.A]: 1, ['Enum.B']: 2, [Enum.C]: 3 }).map(
         ([key, value]) => {
           return key + value ** 10 + 1e3;
-        }
+        },
       );
       continue $label;
     }
@@ -79,7 +81,7 @@ const useRef = <T,>(value: T | null) => 1;
 const ref = useRef<HTMLDivElement | undefined>(null);
 const el = (
   <div ref={ref}>
-    <App className={cn("a", "b")}></App>
+    <App className={cn('a', 'b')}></App>
   </div>
 );
 
