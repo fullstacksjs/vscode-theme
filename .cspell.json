@@ -3,5 +3,5 @@
   "language": "en",
   "ignorePaths": ["**/node_modules/**", "**/package.json"],
   "dictionaries": ["node"],
-  "words": ["FullstacksJS", "Stackframe", "ChatrDiff"]
+  "words": ["FullstacksJS", "Stackframe", "ChatrDiff", "localname"]
 }
