@@ -581,8 +581,6 @@ export interface EditorColors {
   /** Color of whitespace characters in the editor. */
   'editorWhitespace.foreground'?: string;
   /** Color of the editor indentation guides. */
-  'editorIndentGuide.background'?: string;
-  /** Color of the editor indentation guides (1). */
   'editorIndentGuide.background1'?: string;
   /** Color of the editor indentation guides (2). */
   'editorIndentGuide.background2'?: string;
@@ -594,8 +592,6 @@ export interface EditorColors {
   'editorIndentGuide.background5'?: string;
   /** Color of the editor indentation guides (6). */
   'editorIndentGuide.background6'?: string;
-  /** Color of the active editor indentation guide. */
-  'editorIndentGuide.activeBackground'?: string;
   /** Color of the active editor indentation guides (1). */
   'editorIndentGuide.activeBackground1'?: string;
   /** Color of the active editor indentation guides (2). */

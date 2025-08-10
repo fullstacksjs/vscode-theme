@@ -5,6 +5,7 @@ import type { VsCodeTheme } from './types.ts';
 import { semanticTokenColors } from './semanticColors.ts';
 import * as sources from './sources/index.ts';
 import { bracket } from './ui/bracket.ts';
+import { scm } from './ui/scm.ts';
 import { terminal } from './ui/terminal.ts';
 
 const theme: VsCodeTheme = {
@@ -16,6 +17,7 @@ const theme: VsCodeTheme = {
   colors: {
     ...terminal,
     ...bracket,
+    ...scm,
   },
 };
 
