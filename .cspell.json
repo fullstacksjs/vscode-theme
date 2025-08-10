@@ -1,14 +1,7 @@
 {
   "version": "0.2",
   "language": "en",
-  "ignorePaths": [
-    "**/node_modules/**",
-    "**/package.json"
-  ],
-  "dictionaries": [
-    "node"
-  ],
-  "words": [
-    "FullstacksJS"
-  ]
+  "ignorePaths": ["**/node_modules/**", "**/package.json"],
+  "dictionaries": ["node"],
+  "words": ["FullstacksJS", "Stackframe", "ChatrDiff"]
 }

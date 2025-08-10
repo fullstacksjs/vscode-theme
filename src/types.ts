@@ -328,7 +328,7 @@ export interface Profile {
   'profileBadge.background'?: string;
   /** Profile badge foreground color. The profile badge shows on top of the settings gear icon in the activity bar. */
   'profileBadge.foreground'?: string;
-  /** The color of the Profiles editor splitview sash border. */
+  /** The color of the Profiles editor split-view sash border. */
   'profiles.sashBorder'?: string;
 }
 
@@ -1639,7 +1639,7 @@ export interface SettingsEditorColors {
   'settings.focusedRowBorder'?: string;
   /** The color of the header container border. */
   'settings.headerBorder'?: string;
-  /** The color of the Settings editor splitview sash border. */
+  /** The color of the Settings editor split-view sash border. */
   'settings.sashBorder'?: string;
   /** The foreground color for a section header or hovered title. */
   'settings.settingsHeaderHoverForeground'?: string;
