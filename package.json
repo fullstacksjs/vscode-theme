@@ -1,30 +1,56 @@
 {
   "name": "fullstacksjs-vscode",
   "displayName": "FullstacksJS Theme",
-  "repository": "https://github.com/fullstacksjs/vscode-theme",
-  "description": "FullstacksJS community VSCode theme based on FlatRemix",
-  "version": "0.0.10",
+  "description": "FullstacksJS community Minimal VSCode and Cursor theme based on FlatRemix",
+  "version": "0.1.0",
   "publisher": "FullstacksJS",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fullstacksjs/vscode-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fullstacksjs/vscode-theme/issues"
+  },
+  "homepage": "https://fullstacksjs.com",
   "icon": "assets/icon.png",
+  "galleryBanner": {
+    "color": "#23252e",
+    "theme": "dark"
+  },
   "engines": {
-    "vscode": "^1.61.0"
+    "vscode": "^1.85.0"
   },
   "categories": [
     "Themes"
   ],
+  "keywords": [
+    "theme",
+    "dark",
+    "flatremix",
+    "fullstacksjs",
+    "color-theme"
+  ],
   "contributes": {
     "themes": [
       {
-        "label": "FullstacksJS",
+        "label": "FullstacksJS Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/dark-theme.json"
+        "path": "./themes/dark-theme-modern.json"
+      },
+      {
+        "label": "FullstacksJS Legacy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-theme-legacy.json"
       }
     ]
   },
   "scripts": {
-    "spell": "cspell '*.md' --no-progress"
+    "build": "vsce package",
+    "publish": "vsce publish"
   },
   "devDependencies": {
-    "cspell": "^5.21.1"
+    "@vscode/vsce": "3.6.0",
+    "@types/vscode": "1.102.0"
   }
 }

@@ -1,23 +1,52 @@
 # FullstacksJS VSCode Theme
 
-FullstacksJS community VSCode theme based on FlatRemix
+A minimal, comprehensive dark theme for Visual Studio Code and Cursor based on FlatRemix design principles.
 
 ![Screenshot](https://raw.githubusercontent.com/fullstacksjs/vscode-theme/main/assets/screenshot.png)
 
 ## Install
 
-1. Go to [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=FullstacksJS.fullstacksjs-vscode).
-2. Click on the "Install" button.
-3. [Change VSCode theme](https://code.visualstudio.com/docs/getstarted/themes#_selecting-the-color-theme) to the "FullstacksJS" theme.
+### From VS Code Marketplace
+1. Open VS Code
+2. Go to Extensions (Ctrl+Shift+X)
+3. Search for "FullstacksJS Theme"
+4. Click Install
 
-## Customize the theme
+### From VSIX File
+1. Download the `.vsix` file from releases
+2. In VS Code, go to Extensions
+3. Click the "..." menu and select "Install from VSIX..."
+4. Select the downloaded file
 
-To override this (or any other) theme in your personal config file, please follow the guide in the [color theme](https://code.visualstudio.com/api/extension-guides/color-theme) documentation.
+## Usage
 
-## Contribute
+1. Open VS Code
+2. Press `Ctrl+K Ctrl+T` (or `Cmd+K Cmd+T` on macOS)
+3. Select "FullstacksJS Dark" from the theme list
+4. Enjoy your new theme!
 
-1. Clone and open this [repo](https://github.com/fullstacksjs/vscode-theme) in VS Code
-2. Run `npm install` to install the dependencies.
-3. Press `F5` to open a new window with your extension loaded
-4. Change `themes/<YOUR_THEME>.json` file.
-5. Commit your changes and open a PR.
+## Color Palette
+
+The theme uses a carefully crafted color palette:
+
+- **Primary**: `#23252e` - Main background
+- **Secondary**: `#272a34` - Secondary backgrounds
+- **Accent**: `#ffd86e` - Primary accent color
+- **Text**: `#ffffff` - Primary text
+- **Muted**: `#ffffff44` - Muted text
+- **Success**: `#5bf29a` - Success states
+- **Warning**: `#ffd86e` - Warning states
+- **Error**: `#ff7062` - Error states
+
+## Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
+## Support
+
+- **Issues**: [GitHub Issues](https://github.com/fullstacksjs/vscode-theme/issues)
+- **Discussions**: [Telegram Goup](https://t.me/fullstacksjs)
+
+---
+
+Made with ❤️ by the FullstacksJS community
