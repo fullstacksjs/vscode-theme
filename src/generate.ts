@@ -4,6 +4,7 @@ import type { VsCodeTheme } from './types.ts';
 
 import { semanticTokenColors } from './semanticColors.ts';
 import * as sources from './sources/index.ts';
+import { terminal } from './ui/terminal.ts';
 
 const theme: VsCodeTheme = {
   $schema: 'vscode://schemas/color-theme',
@@ -11,7 +12,9 @@ const theme: VsCodeTheme = {
   semanticHighlighting: true,
   semanticTokenColors,
   tokenColors: Object.values(sources).flat(),
-  colors: {},
+  colors: {
+    ...terminal,
+  },
 };
 
 fs.writeFileSync('themes/generated/main.json', JSON.stringify(theme, null, 2));
