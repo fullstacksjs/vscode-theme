@@ -3,13 +3,14 @@ import fs from 'node:fs';
 import type { VsCodeTheme } from './types.ts';
 
 import { semanticTokenColors } from './semanticColors.ts';
+import * as sources from './sources/index.ts';
 
 const theme: VsCodeTheme = {
   $schema: 'vscode://schemas/color-theme',
   name: 'FullstacksJS',
   semanticHighlighting: true,
   semanticTokenColors,
-  tokenColors: [],
+  tokenColors: Object.values(sources).flat(),
   colors: {},
 };
 
