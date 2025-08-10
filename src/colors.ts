@@ -1,5 +1,5 @@
 export const Palette = {
-  Orange: { 600: '#ffa478' },
+  Orange: { 500: '#ffb58a', 600: '#ffa478' },
   Yellow: { 100: '#ffdf9c', 600: '#ffd06b' },
   Blue: { 500: '#66deff', 600: '#4fd9ff' },
   Cyan: { 100: '#adfff4', 600: '#14FFDE', 700: '#2dced0' },
@@ -33,6 +33,8 @@ export const Foregrounds = {
   Magenta: Palette.Magenta['600'],
   Muted: withAlpha(Palette.Gray['100'], 0.3),
   Red: Palette.Red['600'],
+
+  OnPrimary: Palette.Gray['900'],
 };
 
 export const UIColors = {
@@ -41,6 +43,13 @@ export const UIColors = {
   Border: Palette.Gray['700'],
   Transparent: '#00000000',
   Foreground: Palette.Gray['100'],
+
+  Primary: Palette.Orange['600'],
+  PrimaryHover: Palette.Orange['500'],
+
+  Secondary: Palette.Gray['500'],
+  SecondaryHover: Palette.Gray['400'],
+  SecondaryForeground: Palette.Gray['100'],
 };
 
 export const ShellColors = {
