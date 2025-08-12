@@ -435,6 +435,8 @@ export interface EditorGroupsAndTabs {
   'tab.selectedBorderTop'?: string;
   /** Background of a selected tab. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups. */
   'tab.selectedBackground'?: string;
+  /** Border between tabs to indicate that a tab can be inserted between two tabs. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups. */
+  'tab.dragAndDropBorder'?: string;
   /** Foreground of a selected tab. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups. */
   'tab.selectedForeground'?: string;
   /** Bottom border for the active tab in an inactive editor group. */

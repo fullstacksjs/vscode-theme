@@ -10,6 +10,7 @@ import { minimap } from './minimap.ts';
 import { scm } from './scm.ts';
 import { sidebar } from './sidebar.ts';
 import { statusBar } from './status-bar.ts';
+import { tabs } from './tabs.ts';
 import { terminal } from './terminal.ts';
 import { text } from './text.ts';
 
@@ -26,4 +27,5 @@ export const colors: UIColor = {
   ...activityBar,
   ...sidebar,
   ...minimap,
+  ...tabs,
 };
