@@ -7,6 +7,7 @@ import { editor } from './editor.ts';
 import { form } from './form.ts';
 import { list } from './list.ts';
 import { scm } from './scm.ts';
+import { sidebar } from './sidebar.ts';
 import { statusBar } from './status-bar.ts';
 import { terminal } from './terminal.ts';
 import { text } from './text.ts';
@@ -22,4 +23,5 @@ export const colors: UIColor = {
   ...form,
   ...list,
   ...activityBar,
+  ...sidebar,
 };

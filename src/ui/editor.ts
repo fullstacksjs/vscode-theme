@@ -8,7 +8,6 @@ export const editor: UIColor = {
   'window.activeBorder': UIColors.Border,
   'window.inactiveBorder': UIColors.Border,
 
-  'sideBar.background': UIColors.Background,
   'titleBar.activeBackground': UIColors.Background,
   'titleBar.inactiveBackground': UIColors.Background,
   'editor.background': UIColors.Background,
