@@ -13,6 +13,7 @@ export const Palette = {
     500: '#313744',
     600: '#23252e',
     700: '#1c1e25',
+    800: '#121420',
     900: '#000000',
   },
 };
@@ -48,13 +49,15 @@ export const UIColors = {
   BackgroundElevated: Palette.Gray['700'],
   BackgroundFocus: withAlpha(Palette.Gray['900'], 0.3),
   BackgroundHover: withAlpha(Palette.Gray['100'], 0.1),
+  Shadow: withAlpha(Palette.Gray['900'], 0.2),
 
   Danger: Palette.Red['600'],
   Success: Palette.Green['600'],
   Info: Palette.Blue['600'],
   Warning: Palette.Yellow['600'],
 
-  Border: Palette.Gray['700'],
+  Border: Palette.Gray['800'],
+  BorderMuted: Palette.Gray['700'],
   Transparent: '#00000000',
   Foreground: Palette.Gray['100'],
 

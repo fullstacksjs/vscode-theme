@@ -28,6 +28,11 @@ export const editor: UIColor = {
   'editorInlayHint.background': UIColors.Transparent,
   'editorInlayHint.foreground': Foregrounds.Muted,
 
+  'scrollbar.shadow': UIColors.Shadow,
+  'scrollbarSlider.activeBackground': UIColors.BackgroundFocus,
+  'scrollbarSlider.background': UIColors.BackgroundFocus,
+  'scrollbarSlider.hoverBackground': UIColors.BackgroundHover,
+
   'badge.background': UIColors.Secondary,
   'badge.foreground': Foregrounds.OnSecondary,
 };

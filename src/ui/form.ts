@@ -51,4 +51,6 @@ export const form = {
   'inputValidation.warningBackground': UIColors.BackgroundElevated, // Input validation background color for information warning.
   'inputValidation.warningForeground': UIColors.Warning, // Input validation foreground color for warning severity.
   'inputValidation.warningBorder': UIColors.Warning, // Input validation border color for warning severity.
+
+  'progressBar.background': UIColors.Primary, // Background color of the progress bar shown for long running operations.
 };

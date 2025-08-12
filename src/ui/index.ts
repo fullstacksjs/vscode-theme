@@ -4,6 +4,7 @@ import { base } from './base.ts';
 import { bracket } from './bracket.ts';
 import { editor } from './editor.ts';
 import { form } from './form.ts';
+import { list } from './list.ts';
 import { scm } from './scm.ts';
 import { statusBar } from './status-bar.ts';
 import { terminal } from './terminal.ts';
@@ -18,4 +19,5 @@ export const colors: UIColor = {
   ...base,
   ...text,
   ...form,
+  ...list,
 };
