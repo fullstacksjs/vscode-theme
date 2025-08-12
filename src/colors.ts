@@ -43,10 +43,11 @@ export const Foregrounds = {
 export const UIColors = {
   Fallback: Palette.Red['500'],
   Background: Palette.Gray['600'],
-  FocusBackground: withAlpha(Palette.Gray['900'], 0.3),
+  BackgroundFocus: withAlpha(Palette.Gray['900'], 0.3),
   BackgroundHover: withAlpha(Palette.Gray['100'], 0.1),
 
   Danger: Palette.Red['600'],
+  Success: Palette.Green['600'],
 
   Border: Palette.Gray['700'],
   Transparent: '#00000000',

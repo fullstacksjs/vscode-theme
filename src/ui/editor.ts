@@ -3,6 +3,8 @@ import type { UIColor } from '../types.ts';
 import { Foregrounds, UIColors } from '../colors.ts';
 
 export const editor: UIColor = {
+  'editor.foreground': Foregrounds.Neutral,
+
   'window.activeBorder': UIColors.Border,
   'window.inactiveBorder': UIColors.Border,
 
@@ -28,12 +30,4 @@ export const editor: UIColor = {
 
   'badge.background': UIColors.Secondary,
   'badge.foreground': Foregrounds.OnSecondary,
-
-  'button.background': UIColors.Primary,
-  'button.foreground': Foregrounds.OnPrimary,
-  'button.hoverBackground': UIColors.PrimaryHover,
-
-  'button.secondaryForeground': UIColors.SecondaryForeground,
-  'button.secondaryBackground': UIColors.Secondary,
-  'button.secondaryHoverBackground': UIColors.SecondaryHover,
 };

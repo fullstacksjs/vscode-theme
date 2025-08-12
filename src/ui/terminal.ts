@@ -5,7 +5,7 @@ import { Foregrounds, ShellColors, UIColors } from '../colors.ts';
 export const terminal: UIColor = {
   'terminal.background': UIColors.Background,
   'terminal.foreground': Foregrounds.Neutral,
-  'terminal.selectionBackground': UIColors.FocusBackground,
+  'terminal.selectionBackground': UIColors.BackgroundFocus,
   'terminalCursor.background': UIColors.Background,
   'terminalCursor.foreground': Foregrounds.Yellow,
   'terminal.border': UIColors.Border,

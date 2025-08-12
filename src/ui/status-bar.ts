@@ -16,7 +16,7 @@ export const statusBar: UIColor = {
   'statusBar.noFolderBorder': UIColors.Transparent,
 
   'statusBarItem.hoverBackground': UIColors.BackgroundHover,
-  'statusBarItem.activeBackground': UIColors.FocusBackground,
+  'statusBarItem.activeBackground': UIColors.BackgroundFocus,
 
   'statusBarItem.remoteBackground': UIColors.Background,
   'statusBarItem.remoteForeground': Foregrounds.Magenta,
