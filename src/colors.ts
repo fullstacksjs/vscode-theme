@@ -38,16 +38,21 @@ export const Foregrounds = {
   OnPrimary: Palette.Gray['900'],
   OnSecondary: Palette.Gray['100'],
   OnDanger: Palette.Gray['900'],
+  OnInfo: Palette.Gray['900'],
+  OnWarning: Palette.Gray['900'],
 };
 
 export const UIColors = {
   Fallback: Palette.Red['500'],
   Background: Palette.Gray['600'],
+  BackgroundElevated: Palette.Gray['700'],
   BackgroundFocus: withAlpha(Palette.Gray['900'], 0.3),
   BackgroundHover: withAlpha(Palette.Gray['100'], 0.1),
 
   Danger: Palette.Red['600'],
   Success: Palette.Green['600'],
+  Info: Palette.Blue['600'],
+  Warning: Palette.Yellow['600'],
 
   Border: Palette.Gray['700'],
   Transparent: '#00000000',

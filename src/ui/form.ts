@@ -24,4 +24,31 @@ export const form = {
   'radio.inactiveBackground': UIColors.BackgroundHover, // Background color of inactive radio option.
   'radio.inactiveBorder': UIColors.Transparent, // Border color of the inactive radio option.
   'radio.inactiveHoverBackground': UIColors.BackgroundHover, // Background color of inactive active radio option when hovering.
+
+  'dropdown.background': UIColors.BackgroundFocus, // Dropdown background.
+  'dropdown.listBackground': UIColors.BackgroundElevated, // Dropdown list background.
+  'dropdown.border': UIColors.Transparent, // Dropdown border.
+  'dropdown.foreground': Foregrounds.Neutral, // Dropdown foreground.
+
+  'input.background': UIColors.BackgroundFocus, // Input box background.
+  'input.border': UIColors.Transparent, // Input box border.
+  'input.foreground': Foregrounds.Neutral, // Input box foreground.
+  'input.placeholderForeground': Foregrounds.Muted, // Input box foreground color for placeholder text.
+
+  'inputOption.activeBackground': UIColors.BackgroundFocus, // Background color of activated options in input fields.
+  'inputOption.activeBorder': UIColors.Transparent, // Border color of activated options in input fields.
+  'inputOption.activeForeground': Foregrounds.Neutral, // Foreground color of activated options in input fields.
+  'inputOption.hoverBackground': UIColors.BackgroundHover, // Background color of activated options in input fields.
+
+  'inputValidation.errorBackground': UIColors.BackgroundElevated, // Input validation background color for error severity.
+  'inputValidation.errorForeground': UIColors.Danger, // Input validation foreground color for error severity.
+  'inputValidation.errorBorder': UIColors.Danger, // Input validation border color for error severity.
+
+  'inputValidation.infoBackground': UIColors.BackgroundElevated, // Input validation background color for information severity.
+  'inputValidation.infoForeground': UIColors.Info, // Input validation foreground color for information severity.
+  'inputValidation.infoBorder': UIColors.Info, // Input validation border color for information severity.
+
+  'inputValidation.warningBackground': UIColors.BackgroundElevated, // Input validation background color for information warning.
+  'inputValidation.warningForeground': UIColors.Warning, // Input validation foreground color for warning severity.
+  'inputValidation.warningBorder': UIColors.Warning, // Input validation border color for warning severity.
 };
