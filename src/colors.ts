@@ -34,18 +34,29 @@ export const Foregrounds = {
   Muted: withAlpha(Palette.Gray['100'], 0.3),
   Red: Palette.Red['600'],
 
+  Support: withAlpha(Palette.Gray['100'], 0.6),
   OnPrimary: Palette.Gray['900'],
+  OnSecondary: Palette.Gray['100'],
+  OnDanger: Palette.Gray['900'],
 };
 
 export const UIColors = {
+  Fallback: Palette.Red['500'],
   Background: Palette.Gray['600'],
   FocusBackground: withAlpha(Palette.Gray['900'], 0.3),
+  BackgroundHover: withAlpha(Palette.Gray['100'], 0.1),
+
+  Danger: Palette.Red['600'],
+
   Border: Palette.Gray['700'],
   Transparent: '#00000000',
   Foreground: Palette.Gray['100'],
 
   Primary: Palette.Orange['600'],
   PrimaryHover: Palette.Orange['500'],
+
+  Link: Palette.Orange['600'],
+  LinkHover: Palette.Orange['500'],
 
   Secondary: Palette.Gray['500'],
   SecondaryHover: Palette.Gray['400'],

@@ -3,8 +3,31 @@ import type { UIColor } from '../types.ts';
 import { Foregrounds, UIColors } from '../colors.ts';
 
 export const editor: UIColor = {
-  'foreground': Foregrounds.Neutral,
-  'focusBorder': UIColors.Transparent,
+  'window.activeBorder': UIColors.Border,
+  'window.inactiveBorder': UIColors.Border,
+
+  'activityBar.background': UIColors.Background,
+  'sideBar.background': UIColors.Background,
+  'titleBar.activeBackground': UIColors.Background,
+  'titleBar.inactiveBackground': UIColors.Background,
+  'editor.background': UIColors.Background,
+  'editorGutter.background': UIColors.Background,
+  'breadcrumb.background': UIColors.Background,
+  'editorGroupHeader.tabsBackground': UIColors.Background,
+  'panel.background': UIColors.Background,
+  'minimap.background': UIColors.Background,
+  'tab.inactiveBackground': UIColors.Background,
+  'editorSuggestWidget.background': UIColors.Background,
+  'editorGroup.emptyBackground': UIColors.Background,
+  'editorCursor.background': UIColors.Background,
+
+  'selection.background': UIColors.Primary,
+
+  'editorInlayHint.background': UIColors.Transparent,
+  'editorInlayHint.foreground': Foregrounds.Muted,
+
+  'badge.background': UIColors.Secondary,
+  'badge.foreground': Foregrounds.OnSecondary,
 
   'button.background': UIColors.Primary,
   'button.foreground': Foregrounds.OnPrimary,
