@@ -8,7 +8,6 @@ export const editor: UIColor = {
   'window.activeBorder': UIColors.Border,
   'window.inactiveBorder': UIColors.Border,
 
-  'activityBar.background': UIColors.Background,
   'sideBar.background': UIColors.Background,
   'titleBar.activeBackground': UIColors.Background,
   'titleBar.inactiveBackground': UIColors.Background,
@@ -35,4 +34,7 @@ export const editor: UIColor = {
 
   'badge.background': UIColors.Secondary,
   'badge.foreground': Foregrounds.OnSecondary,
+
+  'activityBarBadge.background': UIColors.Secondary, // Activity notification badge background color.
+  'activityBarBadge.foreground': Foregrounds.OnSecondary, // Activity notification badge foreground color.
 };

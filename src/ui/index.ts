@@ -1,5 +1,6 @@
 import type { UIColor } from '../types.ts';
 
+import { activityBar } from './activity-bar.ts';
 import { base } from './base.ts';
 import { bracket } from './bracket.ts';
 import { editor } from './editor.ts';
@@ -20,4 +21,5 @@ export const colors: UIColor = {
   ...text,
   ...form,
   ...list,
+  ...activityBar,
 };

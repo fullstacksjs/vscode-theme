@@ -25,7 +25,7 @@ export const form = {
   'radio.inactiveBorder': UIColors.Transparent, // Border color of the inactive radio option.
   'radio.inactiveHoverBackground': UIColors.BackgroundHover, // Background color of inactive active radio option when hovering.
 
-  'dropdown.background': UIColors.BackgroundFocus, // Dropdown background.
+  'dropdown.background': UIColors.BackgroundElevated, // Dropdown background.
   'dropdown.listBackground': UIColors.BackgroundElevated, // Dropdown list background.
   'dropdown.border': UIColors.Transparent, // Dropdown border.
   'dropdown.foreground': Foregrounds.Neutral, // Dropdown foreground.
