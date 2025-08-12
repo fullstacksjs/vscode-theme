@@ -6,6 +6,7 @@ import { bracket } from './bracket.ts';
 import { editor } from './editor.ts';
 import { form } from './form.ts';
 import { list } from './list.ts';
+import { minimap } from './minimap.ts';
 import { scm } from './scm.ts';
 import { sidebar } from './sidebar.ts';
 import { statusBar } from './status-bar.ts';
@@ -24,4 +25,5 @@ export const colors: UIColor = {
   ...list,
   ...activityBar,
   ...sidebar,
+  ...minimap,
 };

@@ -49,7 +49,10 @@ export const UIColors = {
   BackgroundElevated: Palette.Gray['700'],
   BackgroundFocus: withAlpha(Palette.Gray['900'], 0.3),
   BackgroundHover: withAlpha(Palette.Gray['100'], 0.1),
+  BackgroundOverlay: withAlpha(Palette.Gray['900'], 0.15),
   Shadow: withAlpha(Palette.Gray['900'], 0.2),
+
+  Selection: withAlpha(Palette.Orange['600'], 0.2),
 
   Danger: Palette.Red['600'],
   Success: Palette.Green['600'],
