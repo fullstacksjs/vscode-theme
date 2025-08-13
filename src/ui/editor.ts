@@ -178,7 +178,7 @@ export const editor: UIColor = {
   'inlineEdit.gutterIndicator.secondaryForeground': Foregrounds.OnSecondary, // Foreground color for the secondary inline edit gutter indicator.
   'inlineEdit.gutterIndicator.secondaryBackground': UIColors.Secondary, // Background color for the secondary inline edit gutter indicator.
   'inlineEdit.gutterIndicator.successfulBorder': UIColors.Transparent, // Border color for the successful inline edit gutter indicator.
-  'inlineEdit.gutterIndicator.successfulForeground': Foregrounds.OnSecondary, // Foreground color for the successful inline edit gutter indicator.
+  'inlineEdit.gutterIndicator.successfulForeground': Foregrounds.OnSuccess, // Foreground color for the successful inline edit gutter indicator.
   'inlineEdit.gutterIndicator.successfulBackground': UIColors.Success, // Background color for the successful inline edit gutter indicator.
   'inlineEdit.gutterIndicator.background': UIColors.Selection, // Background color for the inline edit gutter indicator.
 
