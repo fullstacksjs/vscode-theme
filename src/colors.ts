@@ -38,7 +38,7 @@ export const Foregrounds = {
   Support: withAlpha(Palette.Gray['100'], 0.6),
   OnPrimary: Palette.Gray['900'],
   OnSuccess: Palette.Gray['900'],
-  OnSecondary: Palette.Gray['900'],
+  OnSecondary: Palette.Gray['100'],
   OnDanger: Palette.Gray['900'],
   OnInfo: Palette.Gray['900'],
   OnWarning: Palette.Gray['900'],
@@ -61,6 +61,11 @@ export const UIColors = {
   Success: Palette.Green['600'],
   Info: Palette.Blue['600'],
   Warning: Palette.Yellow['600'],
+
+  BackgroundSuccess: withAlpha(Palette.Green['600'], 0.1),
+  BackgroundDanger: withAlpha(Palette.Red['600'], 0.1),
+  BackgroundInfo: withAlpha(Palette.Blue['600'], 0.1),
+  BackgroundWarning: withAlpha(Palette.Yellow['600'], 0.1),
 
   Border: Palette.Gray['800'],
   BorderMuted: Palette.Gray['700'],

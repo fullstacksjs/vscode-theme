@@ -14,8 +14,8 @@ export const form = {
   'checkbox.disabled.background': UIColors.BackgroundHover, // Background of a disabled checkbox.
   'checkbox.disabled.foreground': Foregrounds.Muted, // Foreground of a disabled checkbox.
   'checkbox.border': UIColors.Transparent, // Border color of checkbox widget.
-  'checkbox.selectBackground': UIColors.Primary, // Background color of checkbox widget when the element it's in is selected.
-  'checkbox.selectBorder': Foregrounds.OnPrimary, // Border color of checkbox widget when the element it's in is selected.
+  'checkbox.selectBackground': UIColors.BackgroundHover, // Background color of checkbox widget when the element it's in is selected.
+  'checkbox.selectBorder': UIColors.Border, // Border color of checkbox widget when the element it's in is selected.
 
   'radio.activeForeground': UIColors.Primary, // Foreground color of active radio option.
   'radio.activeBackground': UIColors.BackgroundFocus, // Background color of active radio option.
