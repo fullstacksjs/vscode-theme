@@ -1,5 +1,6 @@
 export * from './base.ts';
 export * from './css.ts';
+export * from './java.ts';
 export * from './json.ts';
 export * from './markup.ts';
 export * from './regex.ts';
