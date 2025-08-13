@@ -18,7 +18,7 @@ export const Palette = {
   },
 };
 
-function withAlpha(hex: string, alpha: number) {
+export function withAlpha(hex: string, alpha: number) {
   return `${hex}${Math.round(alpha * 255)
     .toString(16)
     .padStart(2, '0')}`;
@@ -37,10 +37,12 @@ export const Foregrounds = {
 
   Support: withAlpha(Palette.Gray['100'], 0.6),
   OnPrimary: Palette.Gray['900'],
-  OnSecondary: Palette.Gray['100'],
+  OnSuccess: Palette.Gray['900'],
+  OnSecondary: Palette.Gray['900'],
   OnDanger: Palette.Gray['900'],
   OnInfo: Palette.Gray['900'],
   OnWarning: Palette.Gray['900'],
+  OnTertiary: Palette.Gray['900'],
 };
 
 export const UIColors = {
@@ -50,9 +52,10 @@ export const UIColors = {
   BackgroundFocus: withAlpha(Palette.Gray['900'], 0.3),
   BackgroundHover: withAlpha(Palette.Gray['100'], 0.1),
   BackgroundOverlay: withAlpha(Palette.Gray['900'], 0.15),
-  Shadow: withAlpha(Palette.Gray['900'], 0.2),
 
-  Selection: withAlpha(Palette.Orange['600'], 0.2),
+  Selection: withAlpha(Palette.Gray['100'], 0.1),
+  SelectionInactive: withAlpha(Palette.Gray['900'], 0.25),
+  SelectionFound: withAlpha(Palette.Blue['600'], 0.15),
 
   Danger: Palette.Red['600'],
   Success: Palette.Green['600'],
@@ -67,12 +70,16 @@ export const UIColors = {
   Primary: Palette.Orange['600'],
   PrimaryHover: Palette.Orange['500'],
 
-  Link: Palette.Orange['600'],
-  LinkHover: Palette.Orange['500'],
+  Link: Palette.Magenta['500'],
+  LinkHover: Palette.Magenta['600'],
 
   Secondary: Palette.Gray['500'],
   SecondaryHover: Palette.Gray['400'],
   SecondaryForeground: Palette.Gray['100'],
+
+  Tertiary: Palette.Magenta['500'],
+  TertiaryHover: Palette.Magenta['600'],
+  TertiaryForeground: Palette.Magenta['500'],
 };
 
 export const ShellColors = {

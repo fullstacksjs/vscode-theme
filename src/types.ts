@@ -746,6 +746,12 @@ export interface EditorColors {
   'editorGutter.background'?: string;
   /** Editor gutter background color for lines that are modified. */
   'editorGutter.modifiedBackground'?: string;
+  /** Editor gutter secondary background color for lines that are modified. */
+  'editorGutter.modifiedSecondaryBackground'?: string;
+  /** Editor gutter secondary background color for lines that are added. */
+  'editorGutter.addedSecondaryBackground'?: string;
+  /** Editor gutter secondary background color for lines that are deleted. */
+  'editorGutter.deletedSecondaryBackground'?: string;
   /** Editor gutter background color for lines that are added. */
   'editorGutter.addedBackground'?: string;
   /** Editor gutter background color for lines that are deleted. */
@@ -758,6 +764,10 @@ export interface EditorColors {
   'editorGutter.commentUnresolvedGlyphForeground'?: string;
   /** Color of the folding control in the editor gutter. */
   'editorGutter.foldingControlForeground'?: string;
+  /** Editor gutter decoration color for gutter item glyphs. */
+  'editorGutter.itemGlyphForeground'?: string;
+  /** Editor gutter decoration color for gutter item background. This color should be opaque. */
+  'editorGutter.itemBackground'?: string;
   /** Color of borders and arrow for resolved comments. */
   'editorCommentsWidget.resolvedBorder'?: string;
   /** Color of borders and arrow for unresolved comments. */
@@ -768,14 +778,20 @@ export interface EditorColors {
   'editorCommentsWidget.rangeActiveBackground'?: string;
   /** Background color for comment reply input box. */
   'editorCommentsWidget.replyInputBackground'?: string;
+  /** Border color for the primary inline edit gutter indicator. */
+  'inlineEdit.gutterIndicator.primaryBorder'?: string;
   /** Foreground color for the primary inline edit gutter indicator. */
   'inlineEdit.gutterIndicator.primaryForeground'?: string;
   /** Background color for the primary inline edit gutter indicator. */
   'inlineEdit.gutterIndicator.primaryBackground'?: string;
+  /** Border color for the secondary inline edit gutter indicator. */
+  'inlineEdit.gutterIndicator.secondaryBorder'?: string;
   /** Foreground color for the secondary inline edit gutter indicator. */
   'inlineEdit.gutterIndicator.secondaryForeground'?: string;
   /** Background color for the secondary inline edit gutter indicator. */
   'inlineEdit.gutterIndicator.secondaryBackground'?: string;
+  /** Border color for the successful inline edit gutter indicator. */
+  'inlineEdit.gutterIndicator.successfulBorder'?: string;
   /** Foreground color for the successful inline edit gutter indicator. */
   'inlineEdit.gutterIndicator.successfulForeground'?: string;
   /** Background color for the successful inline edit gutter indicator. */
@@ -804,6 +820,11 @@ export interface EditorColors {
   'inlineEdit.originalBorder'?: string;
   /** Border color for the modified text in inline edits. */
   'inlineEdit.modifiedBorder'?: string;
+
+  /** Modified border color for the inline edits widget when tab will accept it. */
+  'inlineEdit.tabWillAcceptModifiedBorder'?: string;
+  /** Original border color for the inline edits widget over the original text when tab will accept it. */
+  'inlineEdit.tabWillAcceptOriginalBorder'?: string;
   /** Border color for the inline edits widget over the original text when tab will accept it. */
   'inlineEdit.tabWillAcceptBorder'?: string;
   /** Background color for the inline edit word replacement view. */
