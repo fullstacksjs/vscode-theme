@@ -21,7 +21,7 @@ export const typescript: TokenColor[] = [
   {
     name: 'TypeScript Keywords',
     scope:
-      'keyword.operator.expression.keyof.tsx, keyword.operator.expression.typeof.tsx',
+      'keyword.operator.expression.keyof.tsx, keyword.operator.expression.typeof.tsx, keyword.operator.type.asserts.ts',
     settings: {
       foreground: Foregrounds.Red,
     },
