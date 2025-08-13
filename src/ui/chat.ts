@@ -15,4 +15,18 @@ export const chat = {
   'chat.requestBubbleBackground': UIColors.Secondary, // TODO: Background color of the chat request bubble.
   'chat.requestBubbleHoverBackground': UIColors.BackgroundInfo, // TODO: Background color of the chat request bubble on hover.
   'chat.checkpointSeparator': Foregrounds.Muted, // Chat checkpoint separator color.
+
+  // 'inlineChat.background': UIColors.BackgroundHover, // TODO: Background color of the interactive editor widget.
+  // 'inlineChat.foreground': UIColors.Foreground, // TODO: Foreground color of the interactive editor widget
+  'inlineChat.border': UIColors.Transparent, // Border color of the interactive editor widget.
+  'inlineChat.shadow': UIColors.Transparent, // Shadow color of the interactive editor widget.
+  'inlineChatInput.border': UIColors.Border, // TODO: Border color of the interactive editor input.
+  'inlineChatInput.focusBorder': UIColors.Danger, // TODO: Border color of the interactive editor input when focused.
+  'inlineChatInput.placeholderForeground': UIColors.Danger, // TODO: Foreground color of the interactive editor input placeholder.
+  'inlineChatInput.background': UIColors.Danger, // TODO: Background color of the interactive editor input.
+  // 'inlineChatDiff.inserted': UIColors.BackgroundSuccess, // TODO: Background color of inserted text in the interactive editor input.
+  // 'inlineChatDiff.removed': UIColors.BackgroundDanger, // TODO: Background color of removed text in the interactive editor input.
+
+  // 'interactive.activeCodeBorder': UIColors.Danger, // TODO: The border color for the current interactive code cell when the editor has focus.
+  // 'interactive.inactiveCodeBorder': UIColors.Danger, // TODO: The border color for the current interactive code cell when the editor does not have focus.
 };
