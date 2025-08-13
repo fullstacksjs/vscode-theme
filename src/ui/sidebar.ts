@@ -6,7 +6,7 @@ export const sidebar: UIColor = {
   'sideBar.background': UIColors.Background, // Side Bar background color.
   'sideBar.foreground': UIColors.Foreground, // Side Bar foreground color. The Side Bar is the container for views like Explorer and Search.
   'sideBar.border': UIColors.Border, // Side Bar border color on the side separating the editor.
-  'sideBar.dropBackground': UIColors.Primary, // Drag and drop feedback color for the side bar sections. The color should have transparency so that the side bar sections can still shine through.
+  'sideBar.dropBackground': UIColors.SelectionInactive, // Drag and drop feedback color for the side bar sections. The color should have transparency so that the side bar sections can still shine through.
   'sideBarTitle.foreground': UIColors.Foreground, // Side Bar title foreground color.
   'sideBarSectionHeader.background': UIColors.Transparent, // Side Bar section header background color.
   'sideBarSectionHeader.foreground': UIColors.Foreground, // Side Bar section header foreground color.

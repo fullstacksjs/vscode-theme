@@ -53,13 +53,13 @@ export const scm: UIColor = {
   'diffEditorOverview.insertedForeground': UIColors.Success, // Diff overview ruler foreground for inserted content.
   'diffEditorOverview.removedForeground': UIColors.Danger, // Diff overview ruler foreground for removed content.
 
-  // 'diffEditor.unchangedRegionBackground': UIColors.BackgroundInfo, // TODO: The color of unchanged blocks in diff editor.
-  // 'diffEditor.unchangedRegionForeground': UIColors.Foreground, // TODO: The foreground color of unchanged blocks in the diff editor.
-  // 'diffEditor.unchangedCodeBackground': UIColors.BackgroundInfo, // TODO: The background color of unchanged code in the diff editor.
+  'diffEditor.unchangedRegionBackground': UIColors.BackgroundFocus, // TODO: The color of unchanged blocks in diff editor.
+  'diffEditor.unchangedRegionForeground': UIColors.Foreground, // TODO: The foreground color of unchanged blocks in the diff editor.
+  // 'diffEditor.unchangedCodeBackground': UIColors.Info, // TODO: The background color of unchanged code in the diff editor.
   'diffEditor.unchangedRegionShadow': UIColors.Transparent, // The color of the shadow around unchanged region widgets.
-  'diffEditor.move.border': UIColors.Transparent, // The border color for text that got moved in the diff editor.
-  // 'diffEditor.moveActive.border': '', // The active border color for text that got moved in the diff editor.
-  // 'multiDiffEditor.headerBackground': '', // The background color of the diff editor's header
-  // 'multiDiffEditor.background': '', // The background color of the multi file diff editor
-  // 'multiDiffEditor.border': '', // The border color of the multi file diff editor
+  'diffEditor.move.border': UIColors.Border, // The border color for text that got moved in the diff editor.
+  // 'diffEditor.moveActive.border': UIColors.Primary, // TODO: The active border color for text that got moved in the diff editor.
+  'multiDiffEditor.headerBackground': UIColors.Background, // The background color of the diff editor's header
+  'multiDiffEditor.background': UIColors.Background, // The background color of the multi file diff editor
+  'multiDiffEditor.border': UIColors.Border, // The border color of the multi file diff editor
 };

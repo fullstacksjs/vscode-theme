@@ -3,6 +3,7 @@ import type { UIColor } from '../types.ts';
 import { activityBar } from './activity-bar.ts';
 import { base } from './base.ts';
 import { bracket } from './bracket.ts';
+import { chat } from './chat.ts';
 import { editor } from './editor.ts';
 import { form } from './form.ts';
 import { list } from './list.ts';
@@ -28,4 +29,5 @@ export const colors: UIColor = {
   ...sidebar,
   ...minimap,
   ...tabs,
+  ...chat,
 };
