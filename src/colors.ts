@@ -54,6 +54,7 @@ export const UIColors = {
   BackgroundOverlay: withAlpha(Palette.Gray['900'], 0.15),
 
   Selection: withAlpha(Palette.Gray['100'], 0.1),
+  SelectionFocus: withAlpha(Palette.Gray['100'], 0.2),
   SelectionInactive: withAlpha(Palette.Gray['900'], 0.25),
   SelectionFound: withAlpha(Palette.Blue['600'], 0.15),
 
@@ -62,10 +63,17 @@ export const UIColors = {
   Info: Palette.Blue['600'],
   Warning: Palette.Yellow['600'],
 
-  BackgroundSuccess: withAlpha(Palette.Green['600'], 0.1),
-  BackgroundDanger: withAlpha(Palette.Red['600'], 0.1),
-  BackgroundInfo: withAlpha(Palette.Blue['600'], 0.1),
-  BackgroundWarning: withAlpha(Palette.Yellow['600'], 0.1),
+  BackgroundSuccess: withAlpha(Palette.Green['600'], 0.2),
+  BackgroundDanger: withAlpha(Palette.Red['600'], 0.2),
+  BackgroundInfo: withAlpha(Palette.Blue['600'], 0.2),
+  BackgroundWarning: withAlpha(Palette.Yellow['600'], 0.2),
+  BackgroundTertiary: withAlpha(Palette.Magenta['600'], 0.2),
+
+  BackgroundSuccessFocus: withAlpha(Palette.Green['600'], 0.4),
+  BackgroundDangerFocus: withAlpha(Palette.Red['600'], 0.4),
+  BackgroundInfoFocus: withAlpha(Palette.Blue['600'], 0.4),
+  BackgroundWarningFocus: withAlpha(Palette.Yellow['600'], 0.4),
+  BackgroundTertiaryFocus: withAlpha(Palette.Magenta['600'], 0.4),
 
   Border: Palette.Gray['800'],
   BorderMuted: Palette.Gray['700'],

@@ -62,4 +62,31 @@ export const scm: UIColor = {
   'multiDiffEditor.headerBackground': UIColors.Background, // The background color of the diff editor's header
   'multiDiffEditor.background': UIColors.Background, // The background color of the multi file diff editor
   'multiDiffEditor.border': UIColors.Border, // The border color of the multi file diff editor
+
+  'merge.currentHeaderBackground': UIColors.BackgroundTertiaryFocus, // Current header background in inline merge conflicts. The color must not be opaque so as not to hide underlying decorations.
+  'merge.currentContentBackground': UIColors.BackgroundTertiary, // Current content background in inline merge conflicts. The color must not be opaque so as not to hide underlying decorations.
+  'merge.incomingHeaderBackground': UIColors.BackgroundInfoFocus, // Incoming header background in inline merge conflicts. The color must not be opaque so as not to hide underlying decorations.
+  'merge.incomingContentBackground': UIColors.BackgroundInfo, // Incoming content background in inline merge conflicts. The color must not be opaque so as not to hide underlying decorations.
+  'merge.border': UIColors.Transparent, // Border color on headers and the splitter in inline merge conflicts.
+  'merge.commonContentBackground': UIColors.Selection, // Common ancestor content background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.
+  'merge.commonHeaderBackground': UIColors.SelectionFocus, // Common ancestor header background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.
+  // 'editorOverviewRuler.currentContentForeground': UIColors.BackgroundFocus, // Current overview ruler foreground for inline merge conflicts.
+  // 'editorOverviewRuler.incomingContentForeground': UIColors.BackgroundFocus, // Incoming overview ruler foreground for inline merge conflicts.
+  // 'editorOverviewRuler.commonContentForeground': UIColors.BackgroundFocus, // Common ancestor overview ruler foreground for inline merge conflicts.
+  // 'editorOverviewRuler.commentForeground': UIColors.BackgroundFocus, // Editor overview ruler decoration color for resolved comments. This color should be opaque.
+  // 'editorOverviewRuler.commentUnresolvedForeground': UIColors.BackgroundFocus, // Editor overview ruler decoration color for unresolved comments. This color should be opaque.
+
+  'mergeEditor.change.background': UIColors.BackgroundSuccess, // The background color for changes.
+  'mergeEditor.change.word.background': UIColors.BackgroundSuccess, // The background color for word changes.
+  'mergeEditor.conflict.unhandledUnfocused.border': UIColors.Danger, // The border color of unhandled unfocused conflicts.
+  'mergeEditor.conflict.unhandledFocused.border': UIColors.Danger, // The border color of unhandled focused conflicts.
+  'mergeEditor.conflict.handledUnfocused.border': UIColors.BackgroundSuccess, // The border color of handled unfocused conflicts.
+  'mergeEditor.conflict.handledFocused.border': UIColors.Success, // The border color of handled focused conflicts.
+  'mergeEditor.conflict.handled.minimapOverViewRuler': UIColors.Success, // The foreground color for changes in input 1.
+  'mergeEditor.conflict.unhandled.minimapOverViewRuler': UIColors.Danger, // The foreground color for changes in input 1.
+  // 'mergeEditor.conflictingLines.background': UIColors.Danger, // TODO: The background of the "Conflicting Lines" text.
+  // 'mergeEditor.changeBase.background': UIColors.Danger, // TODO: The background color for changes in base.
+  // 'mergeEditor.changeBase.word.background': UIColors.Danger, // TODO: The background color for word changes in base.
+  // 'mergeEditor.conflict.input1.background': UIColors.Danger, // TODO: The background color of decorations in input 1.
+  // 'mergeEditor.conflict.input2.background': UIColors.Danger, // TODO: The background color of decorations in input 2.
 };
