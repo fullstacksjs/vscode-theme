@@ -10,6 +10,7 @@ import { editor } from './editor.ts';
 import { form } from './form.ts';
 import { list } from './list.ts';
 import { minimap } from './minimap.ts';
+import { notification } from './notification.ts';
 import { panel } from './panel.ts';
 import { peekView } from './peek-view.ts';
 import { scm } from './scm.ts';
@@ -40,4 +41,5 @@ export const colors: UIColor = {
   ...panel,
   ...titleBar,
   ...commandCenter,
+  ...notification,
 };
