@@ -1166,6 +1166,10 @@ export interface StatusBarColors {
   'statusBarItem.errorBackground'?: string;
   /** Status bar error items foreground color. Error items stand out from other status bar entries to indicate error conditions. */
   'statusBarItem.errorForeground'?: string;
+  /** Status bar error items background color when hovering. Error items stand out from other status bar entries to indicate error conditions. */
+  'statusBarItem.errorHoverBackground'?: string;
+  /** Status bar error items foreground color when hovering. Error items stand out from other status bar entries to indicate error conditions. */
+  'statusBarItem.errorHoverForeground'?: string;
   /** Status bar warning items background color. Warning items stand out from other status bar entries to indicate warning conditions. The status bar is shown in the bottom of the window. */
   'statusBarItem.warningBackground'?: string;
   /** Status bar warning items foreground color. Warning items stand out from other status bar entries to indicate warning conditions. The status bar is shown in the bottom of the window. */
