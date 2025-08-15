@@ -6,6 +6,7 @@ import { base } from './base.ts';
 import { bracket } from './bracket.ts';
 import { chat } from './chat.ts';
 import { commandCenter } from './command-center.ts';
+import { debug } from './debug.ts';
 import { editorWidget } from './editor-widget.ts';
 import { editor } from './editor.ts';
 import { extensions } from './extensions.ts';
@@ -48,4 +49,5 @@ export const colors: UIColor = {
   ...banner,
   ...extensions,
   ...key,
+  ...debug,
 };
