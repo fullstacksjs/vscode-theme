@@ -1,6 +1,8 @@
+import type { UIColor } from './UIColor.ts';
+
 import { Foregrounds, UIColors } from '../colors.ts';
 
-export const panel = {
+export const panel: UIColor = {
   'panel.background': UIColors.Background,
   'panel.border': UIColors.Border,
   'panel.dropBorder': UIColors.Primary,

@@ -14,6 +14,7 @@ import { form } from './form.ts';
 import { key } from './key.ts';
 import { list } from './list.ts';
 import { minimap } from './minimap.ts';
+import { notebook } from './notebook.ts';
 import { notification } from './notification.ts';
 import { panel } from './panel.ts';
 import { peekView } from './peek-view.ts';
@@ -67,4 +68,5 @@ export const colors: UIColor = generateColors(
   test,
   settings,
   symbol,
+  notebook,
 );
