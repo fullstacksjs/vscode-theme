@@ -18,6 +18,7 @@ import { notification } from './notification.ts';
 import { panel } from './panel.ts';
 import { peekView } from './peek-view.ts';
 import { scm } from './scm.ts';
+import { settings } from './settings.ts';
 import { sidebar } from './sidebar.ts';
 import { statusBar } from './status-bar.ts';
 import { tabs } from './tabs.ts';
@@ -52,4 +53,5 @@ export const colors: UIColor = {
   ...key,
   ...debug,
   ...test,
+  ...settings,
 };
