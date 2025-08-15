@@ -1,6 +1,6 @@
 import type { UIColor } from '../types.ts';
 
-import { Foregrounds, UIColors } from '../colors.ts';
+import { Foregrounds, ShellColors, UIColors } from '../colors.ts';
 
 const added = Foregrounds.Green;
 const modified = Foregrounds.Orange;
@@ -89,4 +89,18 @@ export const scm: UIColor = {
   // 'mergeEditor.changeBase.word.background': UIColors.Danger, // TODO: The background color for word changes in base.
   // 'mergeEditor.conflict.input1.background': UIColors.Danger, // TODO: The background color of decorations in input 1.
   // 'mergeEditor.conflict.input2.background': UIColors.Danger, // TODO: The background color of decorations in input 2.
+
+  'scmGraph.historyItemRefColor': Foregrounds.Green, // History item reference color.
+  'scmGraph.historyItemRemoteRefColor': Foregrounds.Magenta, // History item remote reference color.
+  'scmGraph.foreground1': ShellColors.BrightBlue, // Source control graph foreground color (1).
+  'scmGraph.foreground2': ShellColors.BrightGreen, // Source control graph foreground color (2).
+  'scmGraph.foreground3': ShellColors.BrightYellow, // Source control graph foreground color (3).
+  'scmGraph.foreground4': ShellColors.BrightRed, // Source control graph foreground color (4).
+  'scmGraph.foreground5': ShellColors.BrightCyan, // Source control graph foreground color (5).
+  // 'scmGraph.historyItemHoverLabelForeground': '', // TODO: History item hover label foreground color.
+  // 'scmGraph.historyItemHoverAdditionsForeground': '', // TODO: History item hover additions foreground color.
+  // 'scmGraph.historyItemHoverDeletionsForeground': '', // TODO: History item hover deletions foreground color.
+  // 'scmGraph.historyItemBaseRefColor': '', // TODO: History item base reference color.
+  'scmGraph.historyItemHoverDefaultLabelForeground': Foregrounds.OnSecondary, // History item hover default label foreground color.
+  'scmGraph.historyItemHoverDefaultLabelBackground': UIColors.Secondary, // History item hover default label background color.
 };
