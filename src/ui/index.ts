@@ -4,6 +4,7 @@ import { activityBar } from './activity-bar.ts';
 import { banner } from './banner.ts';
 import { base } from './base.ts';
 import { bracket } from './bracket.ts';
+import { chart } from './chart.ts';
 import { chat } from './chat.ts';
 import { commandCenter } from './command-center.ts';
 import { debug } from './debug.ts';
@@ -14,6 +15,7 @@ import { form } from './form.ts';
 import { key } from './key.ts';
 import { list } from './list.ts';
 import { minimap } from './minimap.ts';
+import { misc } from './misc.ts';
 import { notebook } from './notebook.ts';
 import { notification } from './notification.ts';
 import { panel } from './panel.ts';
@@ -69,4 +71,6 @@ export const colors: UIColor = generateColors(
   settings,
   symbol,
   notebook,
+  chart,
+  misc,
 );

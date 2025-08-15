@@ -103,4 +103,7 @@ export const scm: UIColor = {
   'scmGraph.historyItemBaseRefColor': UIColors.Unknown,
   'scmGraph.historyItemHoverDefaultLabelForeground': Foregrounds.OnSecondary,
   'scmGraph.historyItemHoverDefaultLabelBackground': UIColors.Secondary,
+
+  'commentsView.resolvedIcon': UIColors.Success,
+  'commentsView.unresolvedIcon': UIColors.Warning,
 };
