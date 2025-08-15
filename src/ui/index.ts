@@ -10,6 +10,7 @@ import { editorWidget } from './editor-widget.ts';
 import { editor } from './editor.ts';
 import { extensions } from './extensions.ts';
 import { form } from './form.ts';
+import { key } from './key.ts';
 import { list } from './list.ts';
 import { minimap } from './minimap.ts';
 import { notification } from './notification.ts';
@@ -46,4 +47,5 @@ export const colors: UIColor = {
   ...notification,
   ...banner,
   ...extensions,
+  ...key,
 };
