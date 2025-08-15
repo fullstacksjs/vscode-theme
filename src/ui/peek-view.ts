@@ -1,22 +1,22 @@
-import type { UIColor } from '../types.ts';
+import type { UIColor } from './UIColor.ts';
 
 import { Foregrounds, UIColors } from '../colors.ts';
 
-export const peekView = {
-  'peekView.border': UIColors.Border, // Color of the peek view borders and arrow.
-  'peekViewEditor.background': UIColors.BackgroundFocus, // Background color of the peek view editor.
-  'peekViewEditorGutter.background': UIColors.BackgroundFocus, // Background color of the gutter in the peek view editor.
-  'peekViewEditor.matchHighlightBackground': UIColors.SelectionFound, // Match highlight color in the peek view editor.
-  'peekViewEditor.matchHighlightBorder': UIColors.Transparent, // Match highlight border color in the peek view editor.
-  'peekViewResult.background': UIColors.BackgroundFocus, // Background color of the peek view result list.
-  // 'peekViewResult.fileForeground': '', // Foreground color for file nodes in the peek view result list.
-  'peekViewResult.lineForeground': Foregrounds.Support, // Foreground color for line nodes in the peek view result list.
-  'peekViewResult.matchHighlightBackground': UIColors.SelectionFound, // Match highlight color in the peek view result list.
-  'peekViewResult.selectionBackground': UIColors.BackgroundFocus, // Background color of the selected entry in the peek view result list.
-  'peekViewResult.selectionForeground': UIColors.Foreground, // Foreground color of the selected entry in the peek view result list.
-  'peekViewTitle.background': UIColors.BackgroundFocus, // Background color of the peek view title area.
-  'peekViewTitleDescription.foreground': Foregrounds.Muted, // Color of the peek view title info.
-  'peekViewTitleLabel.foreground': Foregrounds.Support, // Color of the peek view title.
-  'peekViewEditorStickyScroll.background': UIColors.BackgroundElevated, // Background color of sticky scroll in the peek view editor.
-  'peekViewEditorStickyScrollGutter.background': UIColors.BackgroundElevated, // Background color of the gutter part of sticky scroll in the peek view editor.
+export const peekView: UIColor = {
+  'peekView.border': UIColors.Border,
+  'peekViewEditor.background': UIColors.BackgroundFocus,
+  'peekViewEditorGutter.background': UIColors.BackgroundFocus,
+  'peekViewEditor.matchHighlightBackground': UIColors.SelectionFound,
+  'peekViewEditor.matchHighlightBorder': UIColors.Transparent,
+  'peekViewResult.background': UIColors.BackgroundFocus,
+  'peekViewResult.fileForeground': false,
+  'peekViewResult.lineForeground': Foregrounds.Support,
+  'peekViewResult.matchHighlightBackground': UIColors.SelectionFound,
+  'peekViewResult.selectionBackground': UIColors.BackgroundFocus,
+  'peekViewResult.selectionForeground': UIColors.Foreground,
+  'peekViewTitle.background': UIColors.BackgroundFocus,
+  'peekViewTitleDescription.foreground': Foregrounds.Muted,
+  'peekViewTitleLabel.foreground': Foregrounds.Support,
+  'peekViewEditorStickyScroll.background': UIColors.BackgroundElevated,
+  'peekViewEditorStickyScrollGutter.background': UIColors.BackgroundElevated,
 };

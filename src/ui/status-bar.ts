@@ -1,4 +1,4 @@
-import type { UIColor } from '../types.ts';
+import type { UIColor } from './UIColor.ts';
 
 import { Foregrounds, UIColors } from '../colors.ts';
 
@@ -45,7 +45,7 @@ export const statusBar: UIColor = {
   'statusBarItem.focusBorder': UIColors.Primary,
   'statusBar.focusBorder': UIColors.Primary,
 
-  // 'statusBarItem.offlineBackground': UIColors.Danger, // TODO: Add offline status bar item
-  // 'statusBarItem.offlineHoverForeground': Foregrounds.OnPrimary, // TODO: Add offline status bar item
-  // 'statusBarItem.offlineHoverBackground': UIColors.BackgroundHover, // TODO: Add offline status bar item
+  'statusBarItem.offlineBackground': UIColors.Unknown,
+  'statusBarItem.offlineHoverForeground': UIColors.Unknown,
+  'statusBarItem.offlineHoverBackground': UIColors.Unknown,
 };

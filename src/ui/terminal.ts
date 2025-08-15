@@ -1,4 +1,4 @@
-import type { UIColor } from '../types.ts';
+import type { UIColor } from './UIColor.ts';
 
 import { Foregrounds, ShellColors, UIColors } from '../colors.ts';
 
@@ -34,35 +34,35 @@ export const terminal: UIColor = {
   'terminal.ansiYellow': ShellColors.Yellow,
   'terminal.ansiBrightYellow': ShellColors.BrightYellow,
 
-  // 'terminal.selectionForeground': Foregrounds.Red, // The selection foreground color of the terminal. When this is null the selection foreground will be retained and have the minimum contrast ratio feature applied.
-  'terminal.inactiveSelectionBackground': UIColors.SelectionInactive, // The selection background color of the terminal when it does not have focus.
-  // 'terminal.findMatchBackground': '', // Color of the current search match in the terminal. The color must not be opaque so as not to hide underlying terminal content.
-  // 'terminal.findMatchBorder': '', // Border color of the current search match in the terminal.
-  // 'terminal.findMatchHighlightBackground': '', // Color of the other search matches in the terminal. The color must not be opaque so as not to hide underlying terminal content.
-  // 'terminal.findMatchHighlightBorder': '', // Border color of the other search matches in the terminal.
-  'terminal.hoverHighlightBackground': UIColors.Selection, // Color of the highlight when hovering a link in the terminal.
-  'terminal.dropBackground': UIColors.BackgroundOverlay, // The background color when dragging on top of terminals. The color should have transparency so that the terminal contents can still shine through.
-  'terminal.tab.activeBorder': UIColors.Primary, // Border on the side of the terminal tab in the panel. This defaults to tab.activeBorder.
-  // 'terminalCommandDecoration.defaultBackground': '', // TODO: The default terminal command decoration background color.
-  // 'terminalCommandDecoration.successBackground': '', // TODO: The terminal command decoration background color for successful commands.
-  // 'terminalCommandDecoration.errorBackground': '', // TODO: The terminal command decoration background color for error commands.
-  // 'terminalOverviewRuler.cursorForeground': '', // TODO: The overview ruler cursor color.
-  'terminalOverviewRuler.findMatchForeground': UIColors.SelectionFound, // Overview ruler marker color for find matches in the terminal.
-  // 'terminalStickyScroll.background': '', // The background color of the sticky scroll overlay in the terminal.
-  // 'terminalStickyScroll.border': '', // The border of the sticky scroll overlay in the terminal.
-  // 'terminalStickyScrollHover.background': '', // The background color of the sticky scroll overlay in the terminal when hovered.
-  // 'terminal.initialHintForeground': '', // Foreground color of the terminal initial hint.
-  // 'terminalOverviewRuler.border': '', // The overview ruler left-side border color.
-  'terminalCommandGuide.foreground': UIColors.Border, // The foreground color of the terminal command guide that appears to the left of a command and its output on hover.
-  // 'terminalSymbolIcon.aliasForeground': '', // TODO: The foreground color for an alias icon. These icons will appear in the terminal suggest widget
-  // 'terminalSymbolIcon.flagForeground': '', // TODO: The foreground color for an flag icon. These icons will appear in the terminal suggest widget
-  // 'terminalSymbolIcon.optionForeground': '', // TODO: The foreground color for an option icon. These icons will appear in the terminal suggest widget.
-  // 'terminalSymbolIcon.optionValueForeground': '', // TODO: The foreground color for an enum member icon. These icons will appear in the terminal suggest widget.
-  // 'terminalSymbolIcon.methodForeground': '', // TODO: The foreground color for a method icon. These icons will appear in the terminal suggest widget.
-  // 'terminalSymbolIcon.argumentForeground': '', // TODO: The foreground color for an argument icon. These icons will appear in the terminal suggest widget.
-  // 'terminalSymbolIcon.inlineSuggestionForeground': '', // TODO: The foreground color for an inline suggestion icon. These icons will appear in the terminal suggest widget.
-  // 'terminalSymbolIcon.fileForeground': '', // TODO: The foreground color for a file icon. These icons will appear in the terminal suggest widget.
-  // 'terminalSymbolIcon.folderForeground': '', // TODO: The foreground color for a folder icon. These icons will appear in the terminal suggest widget.
-  // 'terminalSymbolIcon.symbolicLinkFileForeground': '', // TODO: The foreground color for a symbolic link file icon. These icons will appear in the terminal suggest widget.
-  // 'terminalSymbolIcon.symbolicLinkFolderForeground': '', // TODO: The foreground color for a symbolic link folder icon. These icons will appear in the terminal suggest widget.
+  'terminal.selectionForeground': false,
+  'terminal.inactiveSelectionBackground': UIColors.SelectionInactive,
+  'terminal.findMatchBackground': false,
+  'terminal.findMatchBorder': false,
+  'terminal.findMatchHighlightBackground': false,
+  'terminal.findMatchHighlightBorder': false,
+  'terminal.hoverHighlightBackground': UIColors.Selection,
+  'terminal.dropBackground': UIColors.BackgroundOverlay,
+  'terminal.tab.activeBorder': UIColors.Primary,
+  'terminalCommandDecoration.defaultBackground': UIColors.Unknown,
+  'terminalCommandDecoration.successBackground': UIColors.Unknown,
+  'terminalCommandDecoration.errorBackground': UIColors.Unknown,
+  'terminalOverviewRuler.cursorForeground': UIColors.Unknown,
+  'terminalOverviewRuler.findMatchForeground': UIColors.SelectionFound,
+  'terminalStickyScroll.background': false,
+  'terminalStickyScroll.border': false,
+  'terminalStickyScrollHover.background': false,
+  'terminal.initialHintForeground': false,
+  'terminalOverviewRuler.border': false,
+  'terminalCommandGuide.foreground': UIColors.Border,
+  'terminalSymbolIcon.aliasForeground': UIColors.Unknown,
+  'terminalSymbolIcon.flagForeground': UIColors.Unknown,
+  'terminalSymbolIcon.optionForeground': UIColors.Unknown,
+  'terminalSymbolIcon.optionValueForeground': UIColors.Unknown,
+  'terminalSymbolIcon.methodForeground': UIColors.Unknown,
+  'terminalSymbolIcon.argumentForeground': UIColors.Unknown,
+  'terminalSymbolIcon.inlineSuggestionForeground': UIColors.Unknown,
+  'terminalSymbolIcon.fileForeground': UIColors.Unknown,
+  'terminalSymbolIcon.folderForeground': UIColors.Unknown,
+  'terminalSymbolIcon.symbolicLinkFileForeground': UIColors.Unknown,
+  'terminalSymbolIcon.symbolicLinkFolderForeground': UIColors.Unknown,
 };

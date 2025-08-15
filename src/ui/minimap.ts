@@ -1,19 +1,19 @@
-import type { UIColor } from '../types.ts';
+import type { UIColor } from './UIColor.ts';
 
-import { UIColors } from '../colors.ts';
+import { UIColors, withAlpha } from '../colors.ts';
 
 export const minimap: UIColor = {
-  'minimap.findMatchHighlight': UIColors.BackgroundHover, // Highlight color for matches from search within files.
-  'minimap.selectionHighlight': UIColors.Selection, // Highlight color for the editor selection.
-  'minimap.errorHighlight': UIColors.Danger, // Highlight color for errors within the editor.
-  'minimap.warningHighlight': UIColors.Warning, // Highlight color for warnings within the editor.
-  'minimap.background': UIColors.BackgroundElevated, // Minimap background color.
-  'minimap.selectionOccurrenceHighlight': UIColors.BackgroundHover, // Minimap marker color for repeating editor selections.
-  'minimap.foregroundOpacity': '#000000aa', // Opacity of foreground elements rendered in the minimap. For example, "#000000c0" will render the elements with 75% opacity.
-  'minimap.infoHighlight': UIColors.Info, // Minimap marker color for infos.
-  'minimap.chatEditHighlight': UIColors.BackgroundFocus, // Color of pending edit regions in the minimap.
+  'minimap.findMatchHighlight': UIColors.BackgroundHover,
+  'minimap.selectionHighlight': UIColors.Selection,
+  'minimap.errorHighlight': UIColors.Danger,
+  'minimap.warningHighlight': UIColors.Warning,
+  'minimap.background': UIColors.BackgroundElevated,
+  'minimap.selectionOccurrenceHighlight': UIColors.BackgroundHover,
+  'minimap.foregroundOpacity': withAlpha(UIColors.Foreground, 0.67),
+  'minimap.infoHighlight': UIColors.Info,
+  'minimap.chatEditHighlight': UIColors.BackgroundFocus,
 
-  'minimapSlider.background': UIColors.BackgroundOverlay, // Minimap slider background color.
-  'minimapSlider.hoverBackground': UIColors.BackgroundHover, // Minimap slider background color when hovering.
-  'minimapSlider.activeBackground': UIColors.BackgroundFocus, // Minimap slider background color when clicked on.
+  'minimapSlider.background': UIColors.BackgroundOverlay,
+  'minimapSlider.hoverBackground': UIColors.BackgroundHover,
+  'minimapSlider.activeBackground': UIColors.BackgroundFocus,
 };

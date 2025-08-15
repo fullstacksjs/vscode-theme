@@ -1,4 +1,4 @@
-import type { UIColor } from '../types.ts';
+import type { UIColor } from './UIColor.ts';
 
 import { Foregrounds, UIColors } from '../colors.ts';
 
