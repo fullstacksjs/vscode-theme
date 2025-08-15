@@ -53,4 +53,13 @@ export const form = {
   'inputValidation.warningBorder': UIColors.Warning, // Input validation border color for warning severity.
 
   'progressBar.background': UIColors.Primary, // Background color of the progress bar shown for long running operations.
+
+  // 'pickerGroup.border': '', // Quick picker (Quick Open) color for grouping borders.
+  // 'pickerGroup.foreground': '', // Quick picker (Quick Open) color for grouping labels.
+  // 'quickInput.background': '', // Quick input background color. The quick input widget is the container for views like the color theme picker.
+  // 'quickInput.foreground': '', // Quick input foreground color. The quick input widget is the container for views like the color theme picker.
+  // 'quickInputList.focusBackground': '', // Quick picker background color for the focused item.
+  // 'quickInputList.focusForeground': '', // Quick picker foreground color for the focused item.
+  // 'quickInputList.focusIconForeground': '', // Quick picker icon foreground color for the focused item.
+  // 'quickInputTitle.background': '', // Quick picker title background color. The quick picker widget is the container for pickers like the Command Palette
 };
