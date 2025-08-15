@@ -1312,6 +1312,8 @@ export interface ExtensionsColors {
   'extensionIcon.preReleaseForeground'?: string;
   /** The icon color for extension sponsor. */
   'extensionIcon.sponsorForeground'?: string;
+  /** The icon color for private extensions. */
+  'extensionIcon.privateForeground'?: string;
 }
 
 export interface QuickPickerColors {

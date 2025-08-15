@@ -8,6 +8,7 @@ import { chat } from './chat.ts';
 import { commandCenter } from './command-center.ts';
 import { editorWidget } from './editor-widget.ts';
 import { editor } from './editor.ts';
+import { extensions } from './extensions.ts';
 import { form } from './form.ts';
 import { list } from './list.ts';
 import { minimap } from './minimap.ts';
@@ -44,4 +45,5 @@ export const colors: UIColor = {
   ...commandCenter,
   ...notification,
   ...banner,
+  ...extensions,
 };
