@@ -17,6 +17,7 @@ import { statusBar } from './status-bar.ts';
 import { tabs } from './tabs.ts';
 import { terminal } from './terminal.ts';
 import { text } from './text.ts';
+import { titleBar } from './title-bar.ts';
 
 export const colors: UIColor = {
   ...terminal,
@@ -36,4 +37,5 @@ export const colors: UIColor = {
   ...editorWidget,
   ...peekView,
   ...panel,
+  ...titleBar,
 };
