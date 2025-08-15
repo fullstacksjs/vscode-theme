@@ -4,6 +4,7 @@ import { activityBar } from './activity-bar.ts';
 import { base } from './base.ts';
 import { bracket } from './bracket.ts';
 import { chat } from './chat.ts';
+import { commandCenter } from './command-center.ts';
 import { editorWidget } from './editor-widget.ts';
 import { editor } from './editor.ts';
 import { form } from './form.ts';
@@ -38,4 +39,5 @@ export const colors: UIColor = {
   ...peekView,
   ...panel,
   ...titleBar,
+  ...commandCenter,
 };
