@@ -1442,6 +1442,24 @@ export interface IntegratedTerminalColors {
   'terminalSymbolIcon.aliasForeground'?: string;
   /** The foreground color for an flag icon. These icons will appear in the terminal suggest widget */
   'terminalSymbolIcon.flagForeground'?: string;
+  /** The foreground color for an option icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.optionForeground'?: string;
+  /** The foreground color for an enum member icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.optionValueForeground'?: string;
+  /** The foreground color for a method icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.methodForeground'?: string;
+  /** The foreground color for an argument icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.argumentForeground'?: string;
+  /** The foreground color for an inline suggestion icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.inlineSuggestionForeground'?: string;
+  /** The foreground color for a file icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.fileForeground'?: string;
+  /** The foreground color for a folder icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.folderForeground'?: string;
+  /** The foreground color for a symbolic link file icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.symbolicLinkFileForeground'?: string;
+  /** The foreground color for a symbolic link folder icon. These icons will appear in the terminal suggest widget. */
+  'terminalSymbolIcon.symbolicLinkFolderForeground'?: string;
 }
 
 export interface DebugColors {
