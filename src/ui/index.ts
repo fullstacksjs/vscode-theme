@@ -1,4 +1,4 @@
-import type { UIColor } from '../types.ts';
+import type { UIColor } from './UIColor.ts';
 
 import { activityBar } from './activity-bar.ts';
 import { banner } from './banner.ts';
@@ -21,37 +21,50 @@ import { scm } from './scm.ts';
 import { settings } from './settings.ts';
 import { sidebar } from './sidebar.ts';
 import { statusBar } from './status-bar.ts';
+import { symbol } from './symbol.ts';
 import { tabs } from './tabs.ts';
 import { terminal } from './terminal.ts';
 import { test } from './test.ts';
 import { text } from './text.ts';
 import { titleBar } from './title-bar.ts';
 
-export const colors: UIColor = {
-  ...terminal,
-  ...bracket,
-  ...scm,
-  ...editor,
-  ...statusBar,
-  ...base,
-  ...text,
-  ...form,
-  ...list,
-  ...activityBar,
-  ...sidebar,
-  ...minimap,
-  ...tabs,
-  ...chat,
-  ...editorWidget,
-  ...peekView,
-  ...panel,
-  ...titleBar,
-  ...commandCenter,
-  ...notification,
-  ...banner,
-  ...extensions,
-  ...key,
-  ...debug,
-  ...test,
-  ...settings,
-};
+function generateColors(...colors: UIColor[]) {
+  return colors.reduce((acc, color) => {
+    const filtered = Object.fromEntries(
+      Object.entries(color).filter(
+        ([_, value]) => value && value !== 'unknown',
+      ),
+    );
+    return { ...acc, ...filtered };
+  }, {} as UIColor);
+}
+
+export const colors: UIColor = generateColors(
+  terminal,
+  bracket,
+  scm,
+  editor,
+  statusBar,
+  base,
+  text,
+  form,
+  list,
+  activityBar,
+  sidebar,
+  minimap,
+  tabs,
+  chat,
+  editorWidget,
+  peekView,
+  panel,
+  titleBar,
+  commandCenter,
+  notification,
+  banner,
+  extensions,
+  key,
+  debug,
+  test,
+  settings,
+  symbol,
+);

@@ -46,6 +46,7 @@ export const Foregrounds = {
 };
 
 export const UIColors = {
+  Unknown: 'unknown',
   Fallback: Palette.Red['500'],
   Background: Palette.Gray['600'],
   BackgroundElevated: Palette.Gray['700'],
