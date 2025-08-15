@@ -19,7 +19,7 @@ export const panel = {
   'panelStickyScroll.background': UIColors.BackgroundElevated, // Background color of sticky scroll in the panel.
   'panelStickyScroll.border': UIColors.Border, // Border color of sticky scroll in the panel.
   // 'panelStickyScroll.shadow': '', // Shadow color of sticky scroll in the panel.
-  'panelSectionHeader.border': '', // Panel section header border color used when multiple views are stacked vertically in the panel. Panels are shown below the editor area and contain views like output and integrated terminal.
+  // 'panelSectionHeader.border': '', // TODO Panel section header border color used when multiple views are stacked vertically in the panel. Panels are shown below the editor area and contain views like output and integrated terminal.
   // 'outputView.background': '', // Output view background color.
   // 'outputViewStickyScroll.background': '', // Output view sticky scroll background color.
 };
