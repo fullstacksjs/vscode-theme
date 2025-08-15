@@ -1,6 +1,7 @@
 import type { UIColor } from '../types.ts';
 
 import { activityBar } from './activity-bar.ts';
+import { banner } from './banner.ts';
 import { base } from './base.ts';
 import { bracket } from './bracket.ts';
 import { chat } from './chat.ts';
@@ -42,4 +43,5 @@ export const colors: UIColor = {
   ...titleBar,
   ...commandCenter,
   ...notification,
+  ...banner,
 };
