@@ -1,4 +1,5 @@
 export * from './base.ts';
+export * from './cpp.ts';
 export * from './css.ts';
 export * from './java.ts';
 export * from './json.ts';
