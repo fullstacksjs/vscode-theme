@@ -2,7 +2,7 @@
   "name": "fullstacksjs-vscode",
   "displayName": "FullstacksJS Theme",
   "description": "FullstacksJS community Minimal VSCode and Cursor theme based on FlatRemix",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "publisher": "FullstacksJS",
   "license": "MIT",
   "type": "module",
