@@ -5,6 +5,7 @@ export * from './json.ts';
 export * from './markup.ts';
 export * from './python.ts';
 export * from './regex.ts';
+export * from './rust.ts';
 export * from './shell.ts';
 export * from './typescript.ts';
 export * from './yaml.ts';
