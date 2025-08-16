@@ -20,7 +20,7 @@
     "theme": "dark"
   },
   "engines": {
-    "vscode": "^1.85.0"
+    "vscode": "^1.103.0"
   },
   "categories": [
     "Themes"
@@ -55,7 +55,7 @@
   "devDependencies": {
     "@fullstacksjs/eslint-config": "13.2.2",
     "@types/node": "24.2.1",
-    "@types/vscode": "1.102.0",
+    "@types/vscode": "1.103.0",
     "@vscode/vsce": "3.6.0",
     "eslint": "9.33.0",
     "prettier": "3.6.2",
