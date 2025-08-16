@@ -1,3 +1,5 @@
+import type { UIColor } from './ui/UIColor.ts';
+
 export interface TokenColorSetting {
   fontStyle?:
     | ''

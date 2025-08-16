@@ -7,25 +7,22 @@ import { Foregrounds } from './colors.ts';
  */
 export const semanticTokenColors: SemanticTokenColors = {
   type: {
-    foreground: Foregrounds.Neutral,
+    foreground: Foregrounds.Blue,
   },
   typeParameter: {
-    foreground: Foregrounds.Neutral,
+    foreground: Foregrounds.Blue,
   },
   namespace: {
-    foreground: Foregrounds.Neutral,
+    foreground: Foregrounds.Cyan,
   },
   enum: {
-    foreground: Foregrounds.Neutral,
+    foreground: Foregrounds.Cyan,
   },
   enumMember: {
-    foreground: Foregrounds.Magenta,
+    foreground: Foregrounds.Neutral,
   },
   interface: {
-    foreground: Foregrounds.Neutral,
-  },
-  class: {
-    foreground: Foregrounds.Neutral,
+    foreground: Foregrounds.Blue,
   },
   annotation: {
     foreground: Foregrounds.Yellow,
@@ -33,13 +30,7 @@ export const semanticTokenColors: SemanticTokenColors = {
   variable: {
     foreground: Foregrounds.Neutral,
   },
-  parameter: {
-    foreground: Foregrounds.Neutral,
-  },
-  property: {
-    foreground: Foregrounds.Magenta,
-  },
   field: {
-    foreground: Foregrounds.Magenta,
+    foreground: Foregrounds.Yellow,
   },
 };

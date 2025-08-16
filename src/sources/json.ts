@@ -15,7 +15,8 @@ export const json: TokenColor[] = [
     name: 'JSON Constant',
     scope: 'constant.language.json',
     settings: {
-      foreground: Foregrounds.Blue,
+      foreground: Foregrounds.Magenta,
+      fontStyle: 'bold',
     },
   },
 ];

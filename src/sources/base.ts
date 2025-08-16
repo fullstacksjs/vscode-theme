@@ -5,8 +5,13 @@ import { Foregrounds } from '../colors.ts';
 export const base: TokenColor[] = [
   {
     name: 'Punctuation',
-    scope:
-      'storage.type.function.arrow, keyword.operator, meta.brace, punctuation.accessor',
+    scope: [
+      'storage.type.function.arrow',
+      'keyword.operator',
+      'meta.brace',
+      'punctuation.accessor',
+      'punctuation.separator.comma',
+    ],
     settings: {
       foreground: Foregrounds.Neutral,
     },
@@ -35,8 +40,22 @@ export const base: TokenColor[] = [
     },
   },
   {
+    name: 'Decorator',
+    scope: ['entity.name.function.decorator', 'meta.function.decorator'],
+    settings: {
+      fontStyle: 'bold',
+    },
+  },
+  {
+    name: 'TypeScript Values',
+    scope: ['constant.language', 'storage.type.numeric.bigint'],
+    settings: {
+      foreground: Foregrounds.Magenta,
+    },
+  },
+  {
     name: 'Variable',
-    scope: 'variable.parameter, meta.definition.property, variable.other',
+    scope: 'meta.definition.property',
     settings: {
       foreground: Foregrounds.Neutral,
     },

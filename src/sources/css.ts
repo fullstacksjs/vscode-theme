@@ -87,4 +87,12 @@ export const css: TokenColor[] = [
       foreground: Foregrounds.Neutral,
     },
   },
+  {
+    name: 'CSS At Rule',
+    scope: ['keyword.control.at-rule.css', 'keyword.control.at-rule'],
+    settings: {
+      foreground: Foregrounds.Red,
+      fontStyle: 'bold',
+    },
+  },
 ];

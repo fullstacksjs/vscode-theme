@@ -1,6 +1,6 @@
-// @ts-nocheck
 /* eslint-disable */
 /* prettier-ignore */
+// @ts-nocheck
 
 import * as React from 'react';
 import { cn } from '@blackhole/shared/cn';
@@ -26,7 +26,8 @@ const urlRegex =
 
 const strings = `Template ${Enum.A + 10}` + 'Double' + 'Single';
 
-abstract class BaseClass {
+@Decorator()
+abstract class BaseClass extends Component {
   protected abstract foo: string;
 }
 
@@ -34,6 +35,7 @@ interface Interface {
   bar: string;
 }
 
+@Decorator
 export class Class extends BaseClass implements Interface {
   protected foo: string;
   public bar: string;
@@ -42,6 +44,11 @@ export class Class extends BaseClass implements Interface {
     super();
     this.foo = 'foo';
     this.bar = 'bar';
+  }
+
+  @Decorator(1, 2, 3)
+  method() {
+    return this.foo;
   }
 }
 

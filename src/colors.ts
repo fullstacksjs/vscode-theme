@@ -1,11 +1,11 @@
 export const Palette = {
   Orange: { 500: '#ffb58a', 600: '#ffa478' },
-  Yellow: { 100: '#ffdf9c', 600: '#ffd06b' },
+  Yellow: { 100: '#ffdf9c', 600: '#ffd257' },
   Blue: { 500: '#66deff', 600: '#4fd9ff' },
   Cyan: { 100: '#adfff4', 600: '#14FFDE', 700: '#2dced0' },
   Green: { 600: '#c6ff90', 700: '#a9ff78' },
   Red: { 100: '#ff94a6', 500: '#e17e85', 600: '#ff7272' },
-  Magenta: { 500: '#a7a7ff', 600: '#a6a6ff' },
+  Magenta: { 500: '#a7a7ff', 600: '#c5b5ff' },
   Gray: {
     100: '#ffffff',
     200: '#f8f8f8',
