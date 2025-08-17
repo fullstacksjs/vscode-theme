@@ -1,6 +1,8 @@
 # Change Log
 
-## [next]
+## [v1.4.3]
+- fix: fix warm secondary color
+- fix: increase dark contrast
 - docs: add screenshots
 
 ## [v1.4.2]

@@ -50,10 +50,10 @@ const themes: ThemeConfig[] = [
     name: 'Dark',
     colors: {
       background: {
-        default: '#0e0e0e',
-        elevated: '#141414',
-        focus: '#000000',
-        hover: withAlpha('#000000', 0.4),
+        default: '#111111',
+        elevated: '#161616',
+        focus: withAlpha('#000000', 0.2),
+        hover: withAlpha('#000000', 0.2),
         overlay: withAlpha('#000000', 0.7),
       },
       selection: {
@@ -62,6 +62,10 @@ const themes: ThemeConfig[] = [
       warning: {
         foreground: '#ffb300',
         focus: '#ffb300',
+      },
+      secondary: {
+        foreground: '#333030',
+        hover: '#443939',
       },
     },
     palette: {},
@@ -75,6 +79,10 @@ const themes: ThemeConfig[] = [
         focus: withAlpha('#000000', 0.4),
         hover: withAlpha('#FFFFFF', 0.4),
         overlay: withAlpha('#000000', 0.2),
+      },
+      secondary: {
+        foreground: '#222222',
+        hover: '#303030',
       },
       border: {},
     },
