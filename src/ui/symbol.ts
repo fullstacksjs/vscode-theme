@@ -1,6 +1,7 @@
-import type { UIColor } from './UIColor.ts';
+import type { UIColors } from '../colors.ts';
+import type { VSCodeTokens } from './VSCodeToken.ts';
 
-export const symbol: UIColor = {
+export const symbol = (_colors: UIColors): VSCodeTokens => ({
   'symbolIcon.arrayForeground': false,
   'symbolIcon.booleanForeground': false,
   'symbolIcon.classForeground': false,
@@ -34,4 +35,4 @@ export const symbol: UIColor = {
   'symbolIcon.typeParameterForeground': false,
   'symbolIcon.unitForeground': false,
   'symbolIcon.variableForeground': false,
-};
+});

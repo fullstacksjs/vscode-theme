@@ -1,50 +1,49 @@
-import type { UIColor } from './UIColor.ts';
+import type { UIColors } from '../colors.ts';
+import type { VSCodeTokens } from './VSCodeToken.ts';
 
-import { Foregrounds, UIColors } from '../colors.ts';
+export const list = (colors: UIColors): VSCodeTokens => ({
+  'list.activeSelectionBackground': colors.background.focus,
+  'list.activeSelectionForeground': colors.primary.foreground,
+  'list.activeSelectionIconForeground': colors.primary.foreground,
 
-export const list: UIColor = {
-  'list.activeSelectionBackground': UIColors.BackgroundFocus,
-  'list.activeSelectionForeground': UIColors.Primary,
-  'list.activeSelectionIconForeground': UIColors.Primary,
-
-  'list.inactiveSelectionBackground': UIColors.BackgroundFocus,
+  'list.inactiveSelectionBackground': colors.background.focus,
   'list.inactiveSelectionForeground': false,
   'list.inactiveSelectionIconForeground': false,
 
-  'list.dropBackground': UIColors.Transparent,
-  'list.focusBackground': UIColors.BackgroundFocus,
+  'list.dropBackground': colors.transparent,
+  'list.focusBackground': colors.background.focus,
   'list.focusForeground': false,
 
-  'list.highlightForeground': UIColors.PrimaryHover,
-  'list.focusHighlightForeground': UIColors.PrimaryHover,
+  'list.highlightForeground': colors.primary.hover,
+  'list.focusHighlightForeground': colors.primary.hover,
 
-  'list.hoverBackground': UIColors.Transparent,
-  'list.hoverForeground': UIColors.PrimaryHover,
+  'list.hoverBackground': colors.transparent,
+  'list.hoverForeground': colors.primary.hover,
 
-  'list.focusOutline': UIColors.Primary,
-  'list.focusAndSelectionOutline': UIColors.Primary,
-  'list.inactiveFocusOutline': UIColors.Transparent,
+  'list.focusOutline': colors.primary.foreground,
+  'list.focusAndSelectionOutline': colors.primary.foreground,
+  'list.inactiveFocusOutline': colors.transparent,
 
-  'list.inactiveFocusBackground': UIColors.BackgroundFocus,
-  'list.invalidItemForeground': UIColors.Danger,
+  'list.inactiveFocusBackground': colors.background.focus,
+  'list.invalidItemForeground': colors.danger.foreground,
 
-  'list.errorForeground': UIColors.Danger,
-  'list.warningForeground': UIColors.Warning,
+  'list.errorForeground': colors.danger.foreground,
+  'list.warningForeground': colors.warning.foreground,
 
-  'listFilterWidget.background': UIColors.Background,
-  'listFilterWidget.outline': UIColors.Transparent,
-  'listFilterWidget.noMatchesOutline': UIColors.Transparent,
-  'listFilterWidget.shadow': UIColors.Transparent,
+  'listFilterWidget.background': colors.background.default,
+  'listFilterWidget.outline': colors.transparent,
+  'listFilterWidget.noMatchesOutline': colors.transparent,
+  'listFilterWidget.shadow': colors.transparent,
 
-  'list.filterMatchBackground': UIColors.BackgroundHover,
-  'list.filterMatchBorder': UIColors.Transparent,
+  'list.filterMatchBackground': colors.background.hover,
+  'list.filterMatchBorder': colors.transparent,
 
-  'list.deemphasizedForeground': Foregrounds.Muted,
-  'list.dropBetweenBackground': UIColors.Primary,
+  'list.deemphasizedForeground': colors.foreground.muted,
+  'list.dropBetweenBackground': colors.primary.foreground,
 
-  'tree.indentGuidesStroke': UIColors.Border,
-  'tree.inactiveIndentGuidesStroke': UIColors.BorderMuted,
+  'tree.indentGuidesStroke': colors.border.default,
+  'tree.inactiveIndentGuidesStroke': colors.border.muted,
 
-  'tree.tableColumnsBorder': UIColors.Border,
-  'tree.tableOddRowsBackground': UIColors.BackgroundFocus,
-};
+  'tree.tableColumnsBorder': colors.border.default,
+  'tree.tableOddRowsBackground': colors.background.focus,
+});

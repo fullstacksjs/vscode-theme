@@ -1,5 +1,7 @@
-import type { UIColor } from './UIColor.ts';
+import type { Palette, UIColors } from '../colors.ts';
+import type { VSCodeTokens } from './VSCodeToken.ts';
 
+import { defaultColors, defaultPalette } from '../colors.ts';
 import { activityBar } from './activity-bar.ts';
 import { banner } from './banner.ts';
 import { base } from './base.ts';
@@ -31,18 +33,7 @@ import { test } from './test.ts';
 import { text } from './text.ts';
 import { titleBar } from './title-bar.ts';
 
-function generateColors(...colors: UIColor[]) {
-  return colors.reduce((acc, color) => {
-    const filtered = Object.fromEntries(
-      Object.entries(color).filter(
-        ([_, value]) => value && value !== 'unknown',
-      ),
-    );
-    return { ...acc, ...filtered };
-  }, {} as UIColor);
-}
-
-export const colors: UIColor = generateColors(
+const generators = [
   terminal,
   bracket,
   scm,
@@ -73,4 +64,23 @@ export const colors: UIColor = generateColors(
   notebook,
   chart,
   misc,
-);
+];
+
+export function generateColors({
+  colors,
+  palette,
+}: {
+  colors: UIColors;
+  palette: Palette;
+}) {
+  return generators
+    .map(generator => generator(colors, palette))
+    .reduce((acc, color) => {
+      const filtered = Object.fromEntries<VSCodeTokens>(
+        Object.entries(color).filter(
+          ([_, value]) => value && value !== 'unknown',
+        ),
+      );
+      return { ...acc, ...filtered };
+    });
+}

@@ -1,8 +1,9 @@
-import { Palette } from '../colors.ts';
+import type { UIColors } from '../colors.ts';
+import type { VSCodeTokens } from './VSCodeToken.ts';
 
-export const bracket = {
-  'editorBracketHighlight.foreground1': Palette.Gray['200'],
-  'editorBracketHighlight.foreground2': Palette.Yellow['100'],
-  'editorBracketHighlight.foreground3': Palette.Cyan['100'],
-  'editorBracketHighlight.foreground4': Palette.Red['100'],
-};
+export const bracket = (colors: UIColors): VSCodeTokens => ({
+  'editorBracketHighlight.foreground1': colors.rainbow.white,
+  'editorBracketHighlight.foreground2': colors.rainbow.yellow,
+  'editorBracketHighlight.foreground3': colors.rainbow.cyan,
+  'editorBracketHighlight.foreground4': colors.rainbow.red,
+});

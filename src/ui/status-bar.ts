@@ -1,51 +1,50 @@
-import type { UIColor } from './UIColor.ts';
+import type { UIColors } from '../colors.ts';
+import type { VSCodeTokens } from './VSCodeToken.ts';
 
-import { Foregrounds, UIColors } from '../colors.ts';
+export const statusBar = (colors: UIColors): VSCodeTokens => ({
+  'statusBar.foreground': colors.foreground.muted,
+  'statusBar.background': colors.background.default,
+  'statusBar.border': colors.transparent,
 
-export const statusBar: UIColor = {
-  'statusBar.foreground': Foregrounds.Muted,
-  'statusBar.background': UIColors.Background,
-  'statusBar.border': UIColors.Transparent,
+  'statusBar.debuggingBackground': colors.danger.foreground,
+  'statusBar.debuggingForeground': colors.danger.onForeground,
+  'statusBar.debuggingBorder': colors.transparent,
 
-  'statusBar.debuggingBackground': UIColors.Danger,
-  'statusBar.debuggingForeground': Foregrounds.OnDanger,
-  'statusBar.debuggingBorder': UIColors.Transparent,
+  'statusBar.noFolderBackground': colors.primary.foreground,
+  'statusBar.noFolderForeground': colors.primary.onForeground,
+  'statusBar.noFolderBorder': colors.transparent,
 
-  'statusBar.noFolderBackground': UIColors.Primary,
-  'statusBar.noFolderForeground': Foregrounds.OnPrimary,
-  'statusBar.noFolderBorder': UIColors.Transparent,
+  'statusBarItem.hoverBackground': colors.background.hover,
+  'statusBarItem.hoverForeground': colors.foreground.support,
 
-  'statusBarItem.hoverBackground': UIColors.BackgroundHover,
-  'statusBarItem.hoverForeground': Foregrounds.Support,
+  'statusBarItem.activeBackground': colors.background.focus,
 
-  'statusBarItem.activeBackground': UIColors.BackgroundFocus,
+  'statusBarItem.remoteBackground': colors.background.default,
+  'statusBarItem.remoteForeground': colors.tertiary.foreground,
 
-  'statusBarItem.remoteBackground': UIColors.Background,
-  'statusBarItem.remoteForeground': Foregrounds.Magenta,
+  'statusBarItem.prominentForeground': colors.primary.onForeground,
+  'statusBarItem.prominentBackground': colors.primary.foreground,
+  'statusBarItem.prominentHoverForeground': colors.primary.onForeground,
+  'statusBarItem.prominentHoverBackground': colors.primary.hover,
 
-  'statusBarItem.prominentForeground': Foregrounds.OnPrimary,
-  'statusBarItem.prominentBackground': UIColors.Primary,
-  'statusBarItem.prominentHoverForeground': Foregrounds.OnPrimary,
-  'statusBarItem.prominentHoverBackground': UIColors.PrimaryHover,
+  'statusBarItem.remoteHoverBackground': colors.tertiary.foreground,
+  'statusBarItem.remoteHoverForeground': colors.tertiary.onForeground,
 
-  'statusBarItem.remoteHoverBackground': UIColors.Tertiary,
-  'statusBarItem.remoteHoverForeground': Foregrounds.OnTertiary,
+  'statusBarItem.errorBackground': colors.danger.foreground,
+  'statusBarItem.errorForeground': colors.danger.onForeground,
+  'statusBarItem.errorHoverBackground': colors.danger.focus,
+  'statusBarItem.errorHoverForeground': colors.danger.onForeground,
 
-  'statusBarItem.errorBackground': UIColors.Danger,
-  'statusBarItem.errorForeground': Foregrounds.OnDanger,
-  'statusBarItem.errorHoverBackground': UIColors.BackgroundDangerFocus,
-  'statusBarItem.errorHoverForeground': Foregrounds.OnDanger,
+  'statusBarItem.warningBackground': colors.warning.foreground,
+  'statusBarItem.warningForeground': colors.warning.onForeground,
+  'statusBarItem.warningHoverBackground': colors.warning.focus,
+  'statusBarItem.warningHoverForeground': colors.warning.onForeground,
 
-  'statusBarItem.warningBackground': UIColors.Warning,
-  'statusBarItem.warningForeground': Foregrounds.OnWarning,
-  'statusBarItem.warningHoverBackground': UIColors.BackgroundWarningFocus,
-  'statusBarItem.warningHoverForeground': Foregrounds.OnWarning,
+  'statusBarItem.compactHoverBackground': colors.background.hover,
+  'statusBarItem.focusBorder': colors.primary.foreground,
+  'statusBar.focusBorder': colors.primary.foreground,
 
-  'statusBarItem.compactHoverBackground': UIColors.BackgroundHover,
-  'statusBarItem.focusBorder': UIColors.Primary,
-  'statusBar.focusBorder': UIColors.Primary,
-
-  'statusBarItem.offlineBackground': UIColors.Unknown,
-  'statusBarItem.offlineHoverForeground': UIColors.Unknown,
-  'statusBarItem.offlineHoverBackground': UIColors.Unknown,
-};
+  'statusBarItem.offlineBackground': colors.unknown,
+  'statusBarItem.offlineHoverForeground': colors.unknown,
+  'statusBarItem.offlineHoverBackground': colors.unknown,
+});

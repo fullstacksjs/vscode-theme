@@ -1,19 +1,18 @@
-import type { UIColor } from './UIColor.ts';
+import type { UIColors } from '../colors.ts';
+import type { VSCodeTokens } from './VSCodeToken.ts';
 
-import { Foregrounds, UIColors } from '../colors.ts';
+export const text = (colors: UIColors): VSCodeTokens => ({
+  'foreground': colors.foreground.default,
 
-export const text: UIColor = {
-  'foreground': Foregrounds.Neutral,
+  'textBlockQuote.background': colors.background.focus,
+  'textBlockQuote.border': colors.tertiary.foreground,
 
-  'textBlockQuote.background': UIColors.BackgroundFocus,
-  'textBlockQuote.border': Foregrounds.Magenta,
+  'textCodeBlock.background': colors.background.focus,
 
-  'textCodeBlock.background': UIColors.BackgroundFocus,
+  'textLink.foreground': colors.link.default,
+  'textLink.activeForeground': colors.link.hover,
 
-  'textLink.foreground': UIColors.Link,
-  'textLink.activeForeground': UIColors.LinkHover,
-
-  'textPreformat.foreground': UIColors.Primary,
-  'textPreformat.background': UIColors.BackgroundFocus,
-  'textSeparator.foreground': Foregrounds.Neutral,
-};
+  'textPreformat.foreground': colors.primary.foreground,
+  'textPreformat.background': colors.background.focus,
+  'textSeparator.foreground': colors.foreground.default,
+});

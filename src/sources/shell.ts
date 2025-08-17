@@ -22,8 +22,15 @@ export const shell: TokenColor[] = [
     name: 'Shell Keywords',
     scope: 'entity.name.command.shell',
     settings: {
-      foreground: Foregrounds.Yellow,
+      foreground: Foregrounds.Neutral,
       fontStyle: 'bold',
+    },
+  },
+  {
+    name: 'Shell Keywords',
+    scope: 'constant.other.option',
+    settings: {
+      foreground: Foregrounds.Neutral,
     },
   },
 ];

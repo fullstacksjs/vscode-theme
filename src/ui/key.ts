@@ -1,12 +1,11 @@
-import type { UIColor } from './UIColor.ts';
+import type { UIColors } from '../colors.ts';
+import type { VSCodeTokens } from './VSCodeToken.ts';
 
-import { Foregrounds, UIColors } from '../colors.ts';
-
-export const key: UIColor = {
-  'keybindingLabel.background': UIColors.BackgroundFocus,
-  'keybindingLabel.foreground': Foregrounds.Support,
-  'keybindingLabel.border': UIColors.BackgroundHover,
-  'keybindingLabel.bottomBorder': UIColors.BackgroundHover,
-  'keybindingTable.headerBackground': UIColors.BackgroundFocus,
-  'keybindingTable.rowsBackground': UIColors.BackgroundFocus,
-};
+export const key = (colors: UIColors): VSCodeTokens => ({
+  'keybindingLabel.background': colors.background.focus,
+  'keybindingLabel.foreground': colors.foreground.support,
+  'keybindingLabel.border': colors.background.hover,
+  'keybindingLabel.bottomBorder': colors.background.hover,
+  'keybindingTable.headerBackground': colors.background.focus,
+  'keybindingTable.rowsBackground': colors.background.focus,
+});

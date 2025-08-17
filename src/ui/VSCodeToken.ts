@@ -1,4 +1,4 @@
-type ColorConfig = string | false;
+export type ColorConfig = string | false;
 export interface ContrastColors {
   /** An extra border around active elements to separate them from others for greater contrast. */
   contrastActiveBorder?: ColorConfig;
@@ -854,6 +854,7 @@ export interface DiffEditorColor {
 export interface ChatColors {
   /** The border color of a chat request. */
   'chat.requestBorder'?: ColorConfig;
+  'chat.requestBackground'?: ColorConfig;
   /** The background color of a chat slash command. */
   'chat.slashCommandBackground'?: ColorConfig;
   /** The foreground color of a chat slash command. */
@@ -864,6 +865,18 @@ export interface ChatColors {
   'chat.avatarForeground'?: ColorConfig;
   /** The foreground color of a chat edited file in the edited file list. */
   'chat.editedFileForeground'?: ColorConfig;
+  /** The foreground color of a chat lines added. */
+  'chat.linesAddedForeground'?: ColorConfig;
+  /** The foreground color of a chat lines removed. */
+  'chat.linesRemovedForeground'?: ColorConfig;
+  /** The border color of a chat request code. */
+  'chat.requestCodeBorder'?: ColorConfig;
+  /** The background color of a chat request bubble. */
+  'chat.requestBubbleBackground'?: ColorConfig;
+  /** The background color of a chat request bubble when hovered. */
+  'chat.requestBubbleHoverBackground'?: ColorConfig;
+  /** The foreground color of a chat checkpoint separator. */
+  'chat.checkpointSeparator'?: ColorConfig;
 }
 
 export interface InlineChatColors {
@@ -885,6 +898,8 @@ export interface InlineChatColors {
   'inlineChatInput.background'?: ColorConfig;
   /** Background color of inserted text in the interactive editor input. */
   'inlineChatDiff.inserted'?: ColorConfig;
+  /** Foreground color of inserted text in the interactive editor input. */
+  'inlineChatDiff.removed'?: ColorConfig;
   /** Background color of removed text in the interactive editor input. */
   'inlineChatrDiff.removed'?: ColorConfig;
 }
@@ -1923,7 +1938,7 @@ export interface GaugeColors {
  * doc: {@link https://code.visualstudio.com/api/references/theme-color}
  * src: {@link https://github.com/microsoft/vscode/commits/main/src/vs/platform/theme/common/colorRegistry.ts}
  */
-export interface UIColor
+export interface VSCodeTokens
   extends ContrastColors,
     BaseColors,
     WindowBorder,

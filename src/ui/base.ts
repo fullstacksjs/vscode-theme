@@ -1,13 +1,12 @@
-import type { UIColor } from './UIColor.ts';
+import type { UIColors } from '../colors.ts';
+import type { VSCodeTokens } from './VSCodeToken.ts';
 
-import { Foregrounds, UIColors } from '../colors.ts';
-
-export const base: UIColor = {
-  'focusBorder': Foregrounds.Muted,
-  'disabledForeground': Foregrounds.Muted,
-  'widget.border': UIColors.Transparent,
-  'descriptionForeground': Foregrounds.Support,
-  'errorForeground': Foregrounds.Red,
-  'icon.foreground': Foregrounds.Neutral,
-  'sash.hoverBorder': UIColors.Border,
-};
+export const base = (colors: UIColors): VSCodeTokens => ({
+  'focusBorder': colors.foreground.muted,
+  'disabledForeground': colors.foreground.muted,
+  'widget.border': colors.transparent,
+  'descriptionForeground': colors.foreground.support,
+  'errorForeground': colors.danger.foreground,
+  'icon.foreground': colors.foreground.default,
+  'sash.hoverBorder': colors.border.default,
+});

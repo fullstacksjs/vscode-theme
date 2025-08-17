@@ -1,23 +1,22 @@
-import type { UIColor } from './UIColor.ts';
+import type { UIColors } from '../colors.ts';
+import type { VSCodeTokens } from './VSCodeToken.ts';
 
-import { UIColors } from '../colors.ts';
+export const sidebar = (colors: UIColors): VSCodeTokens => ({
+  'sideBar.background': colors.background.default,
+  'sideBar.foreground': colors.foreground.default,
+  'sideBar.border': colors.border.default,
+  'sideBar.dropBackground': colors.selection.inactive,
+  'sideBarTitle.foreground': colors.foreground.default,
+  'sideBarSectionHeader.background': colors.transparent,
+  'sideBarSectionHeader.foreground': colors.foreground.default,
 
-export const sidebar: UIColor = {
-  'sideBar.background': UIColors.Background,
-  'sideBar.foreground': UIColors.Foreground,
-  'sideBar.border': UIColors.Border,
-  'sideBar.dropBackground': UIColors.SelectionInactive,
-  'sideBarTitle.foreground': UIColors.Foreground,
-  'sideBarSectionHeader.background': UIColors.Transparent,
-  'sideBarSectionHeader.foreground': UIColors.Foreground,
+  'sideBarSectionHeader.border': colors.border.default,
+  'sideBarActivityBarTop.border': colors.border.default,
 
-  'sideBarSectionHeader.border': UIColors.Border,
-  'sideBarActivityBarTop.border': UIColors.Border,
+  'sideBarTitle.background': colors.background.default,
+  'sideBarTitle.border': colors.border.default,
 
-  'sideBarTitle.background': UIColors.Background,
-  'sideBarTitle.border': UIColors.Border,
-
-  'sideBarStickyScroll.background': UIColors.Background,
-  'sideBarStickyScroll.border': UIColors.Border,
-  'sideBarStickyScroll.shadow': UIColors.Transparent,
-};
+  'sideBarStickyScroll.background': colors.background.default,
+  'sideBarStickyScroll.border': colors.border.default,
+  'sideBarStickyScroll.shadow': colors.transparent,
+});

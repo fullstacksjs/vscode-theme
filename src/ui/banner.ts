@@ -1,9 +1,8 @@
-import type { UIColor } from './UIColor.ts';
+import type { UIColors } from '../colors.ts';
+import type { VSCodeTokens } from './VSCodeToken.ts';
 
-import { Foregrounds, UIColors } from '../colors.ts';
-
-export const banner: UIColor = {
-  'banner.background': UIColors.Warning,
-  'banner.foreground': Foregrounds.OnWarning,
-  'banner.iconForeground': Foregrounds.OnWarning,
-};
+export const banner = (colors: UIColors): VSCodeTokens => ({
+  'banner.background': colors.warning.background,
+  'banner.foreground': colors.warning.onForeground,
+  'banner.iconForeground': colors.warning.onForeground,
+});

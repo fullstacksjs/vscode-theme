@@ -1,32 +1,35 @@
-import { Foregrounds, UIColors, withAlpha } from '../colors.ts';
+import type { UIColors } from '../colors.ts';
+import type { VSCodeTokens } from './VSCodeToken.ts';
 
-export const chat = {
-  'chat.requestBorder': withAlpha(UIColors.Tertiary, 0.3),
-  'chat.requestBackground': UIColors.Unknown,
-  'chat.slashCommandBackground': UIColors.Selection,
-  'chat.slashCommandForeground': UIColors.Tertiary,
+import { withAlpha } from '../utils.ts';
 
-  'chat.avatarBackground': UIColors.Unknown,
-  'chat.avatarForeground': UIColors.Unknown,
-  'chat.editedFileForeground': UIColors.Primary,
-  'chat.linesAddedForeground': UIColors.Success,
-  'chat.linesRemovedForeground': UIColors.Danger,
-  'chat.requestCodeBorder': UIColors.Unknown,
-  'chat.requestBubbleBackground': UIColors.Secondary,
-  'chat.requestBubbleHoverBackground': UIColors.BackgroundInfo,
-  'chat.checkpointSeparator': Foregrounds.Muted,
+export const chat = (colors: UIColors): VSCodeTokens => ({
+  'chat.requestBorder': withAlpha(colors.tertiary.foreground, 0.3),
+  'chat.requestBackground': colors.unknown,
+  'chat.slashCommandBackground': colors.selection.default,
+  'chat.slashCommandForeground': colors.tertiary.foreground,
 
-  'inlineChat.background': UIColors.Unknown,
-  'inlineChat.foreground': UIColors.Unknown,
-  'inlineChat.border': UIColors.Transparent,
-  'inlineChat.shadow': UIColors.Transparent,
-  'inlineChatInput.border': UIColors.Border,
-  'inlineChatInput.focusBorder': UIColors.Danger,
-  'inlineChatInput.placeholderForeground': UIColors.Danger,
-  'inlineChatInput.background': UIColors.Danger,
-  'inlineChatDiff.inserted': UIColors.Unknown,
-  'inlineChatDiff.removed': UIColors.Unknown,
+  'chat.avatarBackground': colors.unknown,
+  'chat.avatarForeground': colors.unknown,
+  'chat.editedFileForeground': colors.primary.foreground,
+  'chat.linesAddedForeground': colors.success.foreground,
+  'chat.linesRemovedForeground': colors.danger.foreground,
+  'chat.requestCodeBorder': colors.unknown,
+  'chat.requestBubbleBackground': colors.secondary.foreground,
+  'chat.requestBubbleHoverBackground': colors.info.background,
+  'chat.checkpointSeparator': colors.foreground.muted,
 
-  'interactive.activeCodeBorder': UIColors.Unknown,
-  'interactive.inactiveCodeBorder': UIColors.Unknown,
-};
+  'inlineChat.background': colors.unknown,
+  'inlineChat.foreground': colors.unknown,
+  'inlineChat.border': colors.transparent,
+  'inlineChat.shadow': colors.transparent,
+  'inlineChatInput.border': colors.border.default,
+  'inlineChatInput.focusBorder': colors.danger.foreground,
+  'inlineChatInput.placeholderForeground': colors.danger.foreground,
+  'inlineChatInput.background': colors.danger.foreground,
+  'inlineChatDiff.inserted': colors.unknown,
+  'inlineChatDiff.removed': colors.unknown,
+
+  'interactive.activeCodeBorder': colors.unknown,
+  'interactive.inactiveCodeBorder': colors.unknown,
+});

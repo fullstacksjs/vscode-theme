@@ -1,60 +1,59 @@
-import type { UIColor } from './UIColor.ts';
+import type { UIColors } from '../colors.ts';
+import type { VSCodeTokens } from './VSCodeToken.ts';
 
-import { Foregrounds, UIColors } from '../colors.ts';
+export const form = (colors: UIColors): VSCodeTokens => ({
+  'button.background': colors.primary.foreground,
+  'button.foreground': colors.primary.onForeground,
+  'button.hoverBackground': colors.primary.hover,
 
-export const form: UIColor = {
-  'button.background': UIColors.Primary,
-  'button.foreground': Foregrounds.OnPrimary,
-  'button.hoverBackground': UIColors.PrimaryHover,
+  'button.secondaryForeground': colors.secondary.onForeground,
+  'button.secondaryBackground': colors.secondary.foreground,
+  'button.secondaryHoverBackground': colors.secondary.hover,
 
-  'button.secondaryForeground': UIColors.SecondaryForeground,
-  'button.secondaryBackground': UIColors.Secondary,
-  'button.secondaryHoverBackground': UIColors.SecondaryHover,
+  'checkbox.background': colors.background.focus,
+  'checkbox.foreground': colors.primary.foreground,
+  'checkbox.disabled.background': colors.background.hover,
+  'checkbox.disabled.foreground': colors.foreground.muted,
+  'checkbox.border': colors.transparent,
+  'checkbox.selectBackground': colors.background.hover,
+  'checkbox.selectBorder': colors.border.default,
 
-  'checkbox.background': UIColors.BackgroundFocus,
-  'checkbox.foreground': UIColors.Primary,
-  'checkbox.disabled.background': UIColors.BackgroundHover,
-  'checkbox.disabled.foreground': Foregrounds.Muted,
-  'checkbox.border': UIColors.Transparent,
-  'checkbox.selectBackground': UIColors.BackgroundHover,
-  'checkbox.selectBorder': UIColors.Border,
+  'radio.activeForeground': colors.primary.foreground,
+  'radio.activeBackground': colors.background.focus,
+  'radio.activeBorder': colors.transparent,
+  'radio.inactiveForeground': colors.foreground.muted,
+  'radio.inactiveBackground': colors.background.hover,
+  'radio.inactiveBorder': colors.transparent,
+  'radio.inactiveHoverBackground': colors.background.hover,
 
-  'radio.activeForeground': UIColors.Primary,
-  'radio.activeBackground': UIColors.BackgroundFocus,
-  'radio.activeBorder': UIColors.Transparent,
-  'radio.inactiveForeground': Foregrounds.Muted,
-  'radio.inactiveBackground': UIColors.BackgroundHover,
-  'radio.inactiveBorder': UIColors.Transparent,
-  'radio.inactiveHoverBackground': UIColors.BackgroundHover,
+  'dropdown.background': colors.background.elevated,
+  'dropdown.listBackground': colors.background.elevated,
+  'dropdown.border': colors.transparent,
+  'dropdown.foreground': colors.foreground.default,
 
-  'dropdown.background': UIColors.BackgroundElevated,
-  'dropdown.listBackground': UIColors.BackgroundElevated,
-  'dropdown.border': UIColors.Transparent,
-  'dropdown.foreground': Foregrounds.Neutral,
+  'input.background': colors.background.focus,
+  'input.border': colors.transparent,
+  'input.foreground': colors.foreground.default,
+  'input.placeholderForeground': colors.foreground.muted,
 
-  'input.background': UIColors.BackgroundFocus,
-  'input.border': UIColors.Transparent,
-  'input.foreground': Foregrounds.Neutral,
-  'input.placeholderForeground': Foregrounds.Muted,
+  'inputOption.activeBackground': colors.background.focus,
+  'inputOption.activeBorder': colors.transparent,
+  'inputOption.activeForeground': colors.foreground.default,
+  'inputOption.hoverBackground': colors.background.hover,
 
-  'inputOption.activeBackground': UIColors.BackgroundFocus,
-  'inputOption.activeBorder': UIColors.Transparent,
-  'inputOption.activeForeground': Foregrounds.Neutral,
-  'inputOption.hoverBackground': UIColors.BackgroundHover,
+  'inputValidation.errorBackground': colors.background.elevated,
+  'inputValidation.errorForeground': colors.danger.foreground,
+  'inputValidation.errorBorder': colors.danger.foreground,
 
-  'inputValidation.errorBackground': UIColors.BackgroundElevated,
-  'inputValidation.errorForeground': UIColors.Danger,
-  'inputValidation.errorBorder': UIColors.Danger,
+  'inputValidation.infoBackground': colors.background.elevated,
+  'inputValidation.infoForeground': colors.info.foreground,
+  'inputValidation.infoBorder': colors.info.foreground,
 
-  'inputValidation.infoBackground': UIColors.BackgroundElevated,
-  'inputValidation.infoForeground': UIColors.Info,
-  'inputValidation.infoBorder': UIColors.Info,
+  'inputValidation.warningBackground': colors.background.elevated,
+  'inputValidation.warningForeground': colors.warning.foreground,
+  'inputValidation.warningBorder': colors.warning.foreground,
 
-  'inputValidation.warningBackground': UIColors.BackgroundElevated,
-  'inputValidation.warningForeground': UIColors.Warning,
-  'inputValidation.warningBorder': UIColors.Warning,
-
-  'progressBar.background': UIColors.Primary,
+  'progressBar.background': colors.primary.foreground,
 
   'pickerGroup.border': false,
   'pickerGroup.foreground': false,
@@ -64,4 +63,4 @@ export const form: UIColor = {
   'quickInputList.focusForeground': false,
   'quickInputList.focusIconForeground': false,
   'quickInputTitle.background': false,
-};
+});

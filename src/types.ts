@@ -1,4 +1,4 @@
-import type { UIColor } from './ui/UIColor.ts';
+import type { VSCodeTokens } from './ui/VSCodeToken.ts';
 
 export interface TokenColorSetting {
   fontStyle?:
@@ -104,12 +104,12 @@ export const Mod = {
   defaultLibrary: 'defaultLibrary',
 } as const;
 
-export interface VsCodeTheme {
+export interface VSCodeTheme {
   $schema?: string;
   name: string;
   include?: string;
   /** Colors in the workbench */
-  colors?: UIColor;
+  colors?: VSCodeTokens;
   /** Colors for syntax highlighting */
   tokenColors?: TokenColor[];
   /** Whether semantic highlighting should be enabled for this theme. */

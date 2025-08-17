@@ -1,14 +1,13 @@
-import type { UIColor } from './UIColor.ts';
+import type { UIColors } from '../colors.ts';
+import type { VSCodeTokens } from './VSCodeToken.ts';
 
-import { UIColors } from '../colors.ts';
-
-export const commandCenter: UIColor = {
-  'commandCenter.activeForeground': UIColors.Foreground,
-  'commandCenter.background': UIColors.BackgroundFocus,
-  'commandCenter.activeBackground': UIColors.BackgroundHover,
-  'commandCenter.border': UIColors.Transparent,
+export const commandCenter = (colors: UIColors): VSCodeTokens => ({
+  'commandCenter.activeForeground': colors.foreground.default,
+  'commandCenter.background': colors.background.focus,
+  'commandCenter.activeBackground': colors.background.hover,
+  'commandCenter.border': colors.transparent,
   'commandCenter.inactiveForeground': false,
-  'commandCenter.inactiveBorder': UIColors.Transparent,
-  'commandCenter.activeBorder': UIColors.Transparent,
-  'commandCenter.debuggingBackground': UIColors.Unknown,
-};
+  'commandCenter.inactiveBorder': colors.transparent,
+  'commandCenter.activeBorder': colors.transparent,
+  'commandCenter.debuggingBackground': colors.unknown,
+});

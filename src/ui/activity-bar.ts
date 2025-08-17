@@ -1,27 +1,27 @@
-import type { UIColor } from './UIColor.ts';
+import type { UIColors } from '../colors.ts';
+import type { VSCodeTokens } from './VSCodeToken.ts';
 
-import { Foregrounds, UIColors } from '../colors.ts';
+export const activityBar = (colors: UIColors): VSCodeTokens => ({
+  'activityBar.background': colors.background.default,
+  'activityBar.dropBorder': colors.primary.foreground,
 
-export const activityBar: UIColor = {
-  'activityBar.background': UIColors.Background,
-  'activityBar.dropBorder': UIColors.Primary,
-  'activityBar.foreground': Foregrounds.Neutral,
-  'activityBar.inactiveForeground': Foregrounds.Muted,
-  'activityBar.border': UIColors.Border,
-  'activityBar.activeBorder': UIColors.Primary,
-  'activityBar.activeBackground': UIColors.Transparent,
-  'activityBar.activeFocusBorder': UIColors.Primary,
+  'activityBar.foreground': colors.foreground.default,
+  'activityBar.inactiveForeground': colors.foreground.muted,
+  'activityBar.border': colors.border.default,
+  'activityBar.activeBorder': colors.primary.foreground,
+  'activityBar.activeBackground': colors.transparent,
+  'activityBar.activeFocusBorder': colors.primary.foreground,
 
-  'activityBarTop.foreground': Foregrounds.Neutral,
-  'activityBarTop.activeBorder': UIColors.Primary,
-  'activityBarTop.inactiveForeground': Foregrounds.Muted,
-  'activityBarTop.dropBorder': UIColors.Primary,
-  'activityBarTop.background': UIColors.Background,
-  'activityBarTop.activeBackground': UIColors.Transparent,
+  'activityBarTop.foreground': colors.foreground.default,
+  'activityBarTop.activeBorder': colors.primary.foreground,
+  'activityBarTop.inactiveForeground': colors.foreground.muted,
+  'activityBarTop.dropBorder': colors.primary.foreground,
+  'activityBarTop.background': colors.background.default,
+  'activityBarTop.activeBackground': colors.transparent,
 
-  'activityWarningBadge.foreground': UIColors.Warning,
-  'activityWarningBadge.background': UIColors.Background,
+  'activityWarningBadge.foreground': colors.warning.foreground,
+  'activityWarningBadge.background': colors.background.default,
 
-  'activityErrorBadge.foreground': UIColors.Danger,
-  'activityErrorBadge.background': UIColors.Background,
-};
+  'activityErrorBadge.foreground': colors.danger.foreground,
+  'activityErrorBadge.background': colors.background.default,
+});

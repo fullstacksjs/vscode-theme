@@ -1,21 +1,20 @@
-import type { UIColor } from './UIColor.ts';
+import type { UIColors } from '../colors.ts';
+import type { VSCodeTokens } from './VSCodeToken.ts';
 
-import { Foregrounds, UIColors } from '../colors.ts';
-
-export const test: UIColor = {
-  'testing.runAction': UIColors.Success,
-  'testing.iconErrored': UIColors.Danger,
-  'testing.iconFailed': UIColors.Danger,
-  'testing.iconPassed': UIColors.Success,
-  'testing.iconQueued': Foregrounds.Support,
-  'testing.iconUnset': Foregrounds.Muted,
-  'testing.iconSkipped': Foregrounds.Muted,
-  'testing.iconErrored.retired': UIColors.Danger,
-  'testing.iconFailed.retired': UIColors.Danger,
-  'testing.iconPassed.retired': UIColors.Success,
-  'testing.iconQueued.retired': Foregrounds.Support,
-  'testing.iconUnset.retired': Foregrounds.Muted,
-  'testing.iconSkipped.retired': Foregrounds.Muted,
+export const test = (colors: UIColors): VSCodeTokens => ({
+  'testing.runAction': colors.success.foreground,
+  'testing.iconErrored': colors.danger.foreground,
+  'testing.iconFailed': colors.danger.foreground,
+  'testing.iconPassed': colors.success.foreground,
+  'testing.iconQueued': colors.foreground.support,
+  'testing.iconUnset': colors.foreground.muted,
+  'testing.iconSkipped': colors.foreground.muted,
+  'testing.iconErrored.retired': colors.danger.foreground,
+  'testing.iconFailed.retired': colors.danger.foreground,
+  'testing.iconPassed.retired': colors.success.foreground,
+  'testing.iconQueued.retired': colors.foreground.support,
+  'testing.iconUnset.retired': colors.foreground.muted,
+  'testing.iconSkipped.retired': colors.foreground.muted,
   'testing.peekBorder': false,
   'testing.peekHeaderBackground': false,
   'testing.message.error.lineBackground': false,
@@ -24,16 +23,16 @@ export const test: UIColor = {
   'testing.messagePeekBorder': false,
   'testing.messagePeekHeaderBackground': false,
 
-  'testing.coveredBackground': UIColors.BackgroundSuccess,
-  'testing.coveredBorder': UIColors.Transparent,
-  'testing.coveredGutterBackground': UIColors.BackgroundSuccess,
-  'testing.uncoveredBranchBackground': UIColors.BackgroundWarning,
-  'testing.uncoveredBackground': UIColors.BackgroundDanger,
-  'testing.uncoveredBorder': UIColors.Transparent,
-  'testing.uncoveredGutterBackground': UIColors.BackgroundDanger,
-  'testing.coverCountBadgeBackground': UIColors.Success,
-  'testing.coverCountBadgeForeground': Foregrounds.OnSuccess,
-  'testing.message.error.badgeBackground': UIColors.Danger,
-  'testing.message.error.badgeBorder': UIColors.Transparent,
-  'testing.message.error.badgeForeground': Foregrounds.OnDanger,
-};
+  'testing.coveredBackground': colors.success.background,
+  'testing.coveredBorder': colors.transparent,
+  'testing.coveredGutterBackground': colors.success.background,
+  'testing.uncoveredBranchBackground': colors.warning.background,
+  'testing.uncoveredBackground': colors.danger.background,
+  'testing.uncoveredBorder': colors.transparent,
+  'testing.uncoveredGutterBackground': colors.danger.background,
+  'testing.coverCountBadgeBackground': colors.success.foreground,
+  'testing.coverCountBadgeForeground': colors.success.onForeground,
+  'testing.message.error.badgeBackground': colors.danger.foreground,
+  'testing.message.error.badgeBorder': colors.transparent,
+  'testing.message.error.badgeForeground': colors.danger.onForeground,
+});

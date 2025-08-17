@@ -1,19 +1,20 @@
-import type { UIColor } from './UIColor.ts';
+import type { UIColors } from '../colors.ts';
+import type { VSCodeTokens } from './VSCodeToken.ts';
 
-import { UIColors, withAlpha } from '../colors.ts';
+import { withAlpha } from '../utils.ts';
 
-export const minimap: UIColor = {
-  'minimap.findMatchHighlight': UIColors.BackgroundHover,
-  'minimap.selectionHighlight': UIColors.Selection,
-  'minimap.errorHighlight': UIColors.Danger,
-  'minimap.warningHighlight': UIColors.Warning,
-  'minimap.background': UIColors.BackgroundElevated,
-  'minimap.selectionOccurrenceHighlight': UIColors.BackgroundHover,
-  'minimap.foregroundOpacity': withAlpha(UIColors.Foreground, 0.67),
-  'minimap.infoHighlight': UIColors.Info,
-  'minimap.chatEditHighlight': UIColors.BackgroundFocus,
+export const minimap = (colors: UIColors): VSCodeTokens => ({
+  'minimap.findMatchHighlight': colors.background.hover,
+  'minimap.selectionHighlight': colors.selection.default,
+  'minimap.errorHighlight': colors.danger.foreground,
+  'minimap.warningHighlight': colors.warning.foreground,
+  'minimap.background': colors.background.elevated,
+  'minimap.selectionOccurrenceHighlight': colors.background.hover,
+  'minimap.foregroundOpacity': withAlpha(colors.foreground.default, 0.67),
+  'minimap.infoHighlight': colors.info.foreground,
+  'minimap.chatEditHighlight': colors.background.focus,
 
-  'minimapSlider.background': UIColors.BackgroundOverlay,
-  'minimapSlider.hoverBackground': UIColors.BackgroundHover,
-  'minimapSlider.activeBackground': UIColors.BackgroundFocus,
-};
+  'minimapSlider.background': colors.background.overlay,
+  'minimapSlider.hoverBackground': colors.background.hover,
+  'minimapSlider.activeBackground': colors.background.focus,
+});

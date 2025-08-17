@@ -1,25 +1,24 @@
-import type { UIColor } from './UIColor.ts';
+import type { Palette, UIColors } from '../colors.ts';
+import type { VSCodeTokens } from './VSCodeToken.ts';
 
-import { Foregrounds, UIColors } from '../colors.ts';
+export const chart = (colors: UIColors, palette: Palette): VSCodeTokens => ({
+  'charts.foreground': colors.foreground.default,
+  'charts.lines': colors.border.default,
+  'charts.red': palette.red,
+  'charts.blue': palette.blue,
+  'charts.yellow': palette.yellow,
+  'charts.orange': palette.orange,
+  'charts.green': palette.green,
+  'charts.purple': palette.magenta,
+  'chart.line': colors.border.default,
+  'chart.axis': colors.border.default,
+  'chart.guide': colors.border.default,
 
-export const chart: UIColor = {
-  'charts.foreground': UIColors.Foreground,
-  'charts.lines': UIColors.Border,
-  'charts.red': Foregrounds.Red,
-  'charts.blue': Foregrounds.Blue,
-  'charts.yellow': Foregrounds.Yellow,
-  'charts.orange': Foregrounds.Orange,
-  'charts.green': Foregrounds.Green,
-  'charts.purple': Foregrounds.Magenta,
-  'chart.line': UIColors.Border,
-  'chart.axis': UIColors.Border,
-  'chart.guide': UIColors.Border,
-
-  'gauge.background': UIColors.Background,
-  'gauge.foreground': UIColors.Foreground,
-  'gauge.border': UIColors.Border,
-  'gauge.warningBackground': UIColors.Warning,
-  'gauge.warningForeground': Foregrounds.OnWarning,
-  'gauge.errorBackground': UIColors.Danger,
-  'gauge.errorForeground': Foregrounds.OnDanger,
-};
+  'gauge.background': colors.background.default,
+  'gauge.foreground': colors.foreground.default,
+  'gauge.border': colors.border.default,
+  'gauge.warningBackground': colors.warning.foreground,
+  'gauge.warningForeground': colors.warning.onForeground,
+  'gauge.errorBackground': colors.danger.foreground,
+  'gauge.errorForeground': colors.danger.onForeground,
+});

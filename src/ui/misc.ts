@@ -1,9 +1,8 @@
-import type { UIColor } from './UIColor.ts';
+import type { UIColors } from '../colors.ts';
+import type { VSCodeTokens } from './VSCodeToken.ts';
 
-import { UIColors } from '../colors.ts';
-
-export const misc: UIColor = {
-  'simpleFindWidget.sashBorder': UIColors.Unknown,
-  'actionBar.toggledBackground': UIColors.Unknown,
-  'ports.iconRunningProcessForeground': UIColors.Unknown,
-};
+export const misc = (colors: UIColors): VSCodeTokens => ({
+  'simpleFindWidget.sashBorder': colors.unknown,
+  'actionBar.toggledBackground': colors.unknown,
+  'ports.iconRunningProcessForeground': colors.unknown,
+});

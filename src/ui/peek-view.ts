@@ -1,22 +1,21 @@
-import type { UIColor } from './UIColor.ts';
+import type { UIColors } from '../colors.ts';
+import type { VSCodeTokens } from './VSCodeToken.ts';
 
-import { Foregrounds, UIColors } from '../colors.ts';
-
-export const peekView: UIColor = {
-  'peekView.border': UIColors.Border,
-  'peekViewEditor.background': UIColors.BackgroundFocus,
-  'peekViewEditorGutter.background': UIColors.BackgroundFocus,
-  'peekViewEditor.matchHighlightBackground': UIColors.SelectionFound,
-  'peekViewEditor.matchHighlightBorder': UIColors.Transparent,
-  'peekViewResult.background': UIColors.BackgroundFocus,
+export const peekView = (colors: UIColors): VSCodeTokens => ({
+  'peekView.border': colors.border.default,
+  'peekViewEditor.background': colors.background.focus,
+  'peekViewEditorGutter.background': colors.background.focus,
+  'peekViewEditor.matchHighlightBackground': colors.selection.found,
+  'peekViewEditor.matchHighlightBorder': colors.transparent,
+  'peekViewResult.background': colors.background.focus,
   'peekViewResult.fileForeground': false,
-  'peekViewResult.lineForeground': Foregrounds.Support,
-  'peekViewResult.matchHighlightBackground': UIColors.SelectionFound,
-  'peekViewResult.selectionBackground': UIColors.BackgroundFocus,
-  'peekViewResult.selectionForeground': UIColors.Foreground,
-  'peekViewTitle.background': UIColors.BackgroundFocus,
-  'peekViewTitleDescription.foreground': Foregrounds.Muted,
-  'peekViewTitleLabel.foreground': Foregrounds.Support,
-  'peekViewEditorStickyScroll.background': UIColors.BackgroundElevated,
-  'peekViewEditorStickyScrollGutter.background': UIColors.BackgroundElevated,
-};
+  'peekViewResult.lineForeground': colors.foreground.support,
+  'peekViewResult.matchHighlightBackground': colors.selection.found,
+  'peekViewResult.selectionBackground': colors.background.focus,
+  'peekViewResult.selectionForeground': colors.foreground.default,
+  'peekViewTitle.background': colors.background.focus,
+  'peekViewTitleDescription.foreground': colors.foreground.muted,
+  'peekViewTitleLabel.foreground': colors.foreground.support,
+  'peekViewEditorStickyScroll.background': colors.background.elevated,
+  'peekViewEditorStickyScrollGutter.background': colors.background.elevated,
+});

@@ -1,12 +1,11 @@
-import type { UIColor } from './UIColor.ts';
+import type { UIColors } from '../colors.ts';
+import type { VSCodeTokens } from './VSCodeToken.ts';
 
-import { UIColors } from '../colors.ts';
-
-export const settings: UIColor = {
-  'settings.headerForeground': UIColors.Foreground,
-  'settings.modifiedItemIndicator': UIColors.Primary,
-  'settings.focusedRowBorder': UIColors.Transparent,
-  'settings.headerBorder': UIColors.Border,
+export const settings = (colors: UIColors): VSCodeTokens => ({
+  'settings.headerForeground': colors.foreground.default,
+  'settings.modifiedItemIndicator': colors.primary.foreground,
+  'settings.focusedRowBorder': colors.transparent,
+  'settings.headerBorder': colors.border.default,
 
   'settings.dropdownBackground': false,
   'settings.dropdownForeground': false,
@@ -25,4 +24,4 @@ export const settings: UIColor = {
   'settings.focusedRowBackground': false,
   'settings.sashBorder': false,
   'settings.settingsHeaderHoverForeground': false,
-};
+});

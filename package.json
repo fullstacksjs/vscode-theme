@@ -35,19 +35,29 @@
   "contributes": {
     "themes": [
       {
-        "label": "FullstacksJS Dark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/generated/main.json"
-      },
-      {
-        "label": "FullstacksJS Legacy",
+        "label": "FullstacksJS (Legacy)",
         "uiTheme": "vs-dark",
         "path": "./themes/legacy.json"
+      },
+      {
+        "label": "FullstacksJS (Main)",
+        "uiTheme": "vs-dark",
+        "path": "themes/generated/main.json"
+      },
+      {
+        "label": "FullstacksJS (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "themes/generated/dark.json"
+      },
+      {
+        "label": "FullstacksJS (Warm)",
+        "uiTheme": "vs-dark",
+        "path": "themes/generated/warm.json"
       }
     ]
   },
   "scripts": {
-    "dev": "node --watch --experimental-strip-types src/generate.ts",
+    "dev": "node --watch --experimental-strip-types --watch-path src/ src/generate.ts",
     "verify": "eslint src/",
     "build": "node --experimental-strip-types src/generate.ts && vsce package",
     "publish": "vsce publish"
