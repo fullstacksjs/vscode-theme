@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import path from 'node:path';
 
 import type { ColorConfig } from './ui/VSCodeToken.ts';
 
@@ -25,8 +26,11 @@ export function kebabCase(str: string) {
   return str.split(' ').join('-').toLowerCase();
 }
 
-export function writeJSON(path: string, content: object) {
-  fs.writeFileSync(path, `${JSON.stringify(content, null, 2)}\n`);
+export function writeJSON(p: string, content: object) {
+  fs.writeFileSync(
+    path.join(process.cwd(), p),
+    `${JSON.stringify(content, null, 2)}\n`,
+  );
 }
 
 export type DeepPartial<T> = T extends object
