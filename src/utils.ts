@@ -27,6 +27,7 @@ export function kebabCase(str: string) {
 }
 
 export function writeJSON(p: string, content: object) {
+  fs.mkdirSync(path.dirname(p), { recursive: true });
   fs.writeFileSync(
     path.join(process.cwd(), p),
     `${JSON.stringify(content, null, 2)}\n`,
