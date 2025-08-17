@@ -16,7 +16,7 @@ Thank you for your interest in contributing to the FullstacksJS VSCode Theme! Th
 ### Prerequisites
 
 - Node.js +22
-- VS Code +1.85.0
+- VS Code +1.55.0
 - Git
 
 ### Theme Structure
@@ -36,13 +36,13 @@ The theme consists of several key components:
 4. **Make your changes** to the `src` files.
 5. **Test your changes**: using files in `tests` directory.
 6. **Build the extension** using `npm run build`.
-7. **Commit your changes**
-8. **Push and create a PR**
-
+7. **Commit your changes**.
+8. **Push and create a PR**.
 
 ### Adding New Language Support
 
-1. Add a new source file in `src/sources/`
-2. Export the new source file in `src/index.ts`
+1. Add a new source file in `src/sources/`.
+2. Export the new source file in `src/index.ts`.
+3. Don't forget to add `tests` file.
 
-Thank you for contributing to the FullstacksJS VSCode Theme! 🎨
+Thank you for contributing!

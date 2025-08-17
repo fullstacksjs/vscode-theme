@@ -2,7 +2,11 @@
 
 A minimal, comprehensive dark theme for Visual Studio Code and Cursor based on FlatRemix design principles.
 
-![Screenshot](https://raw.githubusercontent.com/fullstacksjs/vscode-theme/main/assets/screenshot.png)
+![Dark](https://raw.githubusercontent.com/fullstacksjs/vscode-theme/main/assets/dark.png)
+
+![Main](https://raw.githubusercontent.com/fullstacksjs/vscode-theme/main/assets/main.png)
+
+![Warm](https://raw.githubusercontent.com/fullstacksjs/vscode-theme/main/assets/warm.png)
 
 ## Install
 
@@ -17,26 +21,6 @@ A minimal, comprehensive dark theme for Visual Studio Code and Cursor based on F
 2. In VS Code, go to Extensions
 3. Click the "..." menu and select "Install from VSIX..."
 4. Select the downloaded file
-
-## Usage
-
-1. Open VS Code
-2. Press `Ctrl+K Ctrl+T` (or `Cmd+K Cmd+T` on macOS)
-3. Select "FullstacksJS Dark" from the theme list
-4. Enjoy your new theme!
-
-## Color Palette
-
-The theme uses a carefully crafted color palette:
-
-- **Primary**: `#23252e` - Main background
-- **Secondary**: `#272a34` - Secondary backgrounds
-- **Accent**: `#ffd86e` - Primary accent color
-- **Text**: `#ffffff` - Primary text
-- **Muted**: `#ffffff44` - Muted text
-- **Success**: `#5bf29a` - Success states
-- **Warning**: `#ffd86e` - Warning states
-- **Error**: `#ff7062` - Error states
 
 ## Contributing
 
