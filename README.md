@@ -2,10 +2,17 @@
 
 A minimal, comprehensive dark theme for Visual Studio Code and Cursor based on FlatRemix design principles.
 
+## Screenshots
+
+### Dark
+
 ![Dark](https://raw.githubusercontent.com/fullstacksjs/vscode-theme/main/assets/dark.png)
+
+### Main
 
 ![Main](https://raw.githubusercontent.com/fullstacksjs/vscode-theme/main/assets/main.png)
 
+### Warm
 ![Warm](https://raw.githubusercontent.com/fullstacksjs/vscode-theme/main/assets/warm.png)
 
 ## Install
