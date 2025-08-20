@@ -15,7 +15,7 @@ export const chart = (colors: UIColors, palette: Palette): VSCodeTokens => ({
   'chart.guide': colors.border.default,
 
   'gauge.background': colors.background.default,
-  'gauge.foreground': colors.foreground.default,
+  'gauge.foreground': colors.background.focus,
   'gauge.border': colors.border.default,
   'gauge.warningBackground': colors.warning.foreground,
   'gauge.warningForeground': colors.warning.onForeground,
