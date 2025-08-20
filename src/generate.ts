@@ -67,6 +67,9 @@ const themes: ThemeConfig[] = [
         foreground: '#333030',
         hover: '#443939',
       },
+      border: {
+        muted: '#444444',
+      },
     },
     palette: {},
   },

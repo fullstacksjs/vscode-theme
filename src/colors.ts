@@ -37,6 +37,7 @@ export interface UIColors {
   border: {
     default: ColorConfig;
     muted: ColorConfig;
+    invert: ColorConfig;
   };
 
   rainbow: {
@@ -118,7 +119,6 @@ const Gray = {
   400: '#556570',
   500: '#313744',
   600: '#23252e',
-  700: '#1c1e25',
 };
 
 export const Foregrounds = {
@@ -138,7 +138,7 @@ export const defaultColors: UIColors = {
   transparent: '#00000000',
   background: {
     default: Gray['600'],
-    elevated: Gray['700'],
+    elevated: '#1c1e25',
     focus: withAlpha(black, 0.3),
     overlay: withAlpha(black, 0.15),
     hover: withAlpha(white, 0.1),
@@ -181,7 +181,8 @@ export const defaultColors: UIColors = {
   },
   border: {
     default: '#121420',
-    muted: Gray['700'],
+    muted: withAlpha(white, 0.2),
+    invert: white,
   },
   foreground: {
     default: white,

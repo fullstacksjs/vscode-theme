@@ -1,5 +1,10 @@
 # Change Log
 
+## [v1.5.0]
+- fix: fix progressbar color
+- fix: fix dark theme color contrast
+- feat: improve notebook tokens
+
 ## [v1.4.4]
 - fix: fix typescript variable tokens
 - fix: fix template expression tokens
