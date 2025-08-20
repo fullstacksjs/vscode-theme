@@ -50,9 +50,9 @@ const themes: ThemeConfig[] = [
     name: 'Dark',
     colors: {
       background: {
-        default: '#111111',
+        default: '#131313',
         elevated: '#161616',
-        focus: withAlpha('#000000', 0.2),
+        focus: withAlpha('#000000', 0.6),
         hover: withAlpha('#000000', 0.2),
         overlay: withAlpha('#000000', 0.7),
       },
