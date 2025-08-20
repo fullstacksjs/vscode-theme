@@ -2,6 +2,8 @@ import type { TokenColor } from '../types.ts';
 
 import { Foregrounds } from '../colors.ts';
 
+const langs = ['js', 'ts', 'jsx', 'tsx'];
+
 export const typescript: TokenColor[] = [
   {
     name: 'TypeScript Punctuation',
@@ -57,6 +59,17 @@ export const typescript: TokenColor[] = [
     scope: ['support.type.primitive.tsx', 'support.type.builtin.tsx'],
     settings: {
       foreground: Foregrounds.Cyan,
+    },
+  },
+  {
+    name: 'TypeScript Variable',
+    scope: langs.flatMap(lang => [
+      `variable.other.object.property.${lang}`,
+      `variable.other.object.${lang}`,
+      `meta.template.expression.${lang}`,
+    ]),
+    settings: {
+      foreground: Foregrounds.Neutral,
     },
   },
 ];

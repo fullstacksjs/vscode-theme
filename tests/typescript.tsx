@@ -7,6 +7,8 @@ import { cn } from '@blackhole/shared/cn';
 
 namespace Namespace {}
 
+Other.call.bind(`Some${expression + 1}`);
+
 export const enum Enum {
   A = 1,
   B = 4,

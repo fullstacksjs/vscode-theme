@@ -1,5 +1,9 @@
 # Change Log
 
+## [v1.4.4]
+- fix: fix typescript variable tokens
+- fix: fix template expression tokens
+
 ## [v1.4.3]
 - fix: fix warm secondary color
 - fix: increase dark contrast
