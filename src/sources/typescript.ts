@@ -49,6 +49,8 @@ export const typescript: TokenColor[] = [
       'keyword.operator.expression.typeof.tsx',
       'keyword.operator.type.asserts.ts',
       'keyword.operator.expression.instanceof',
+      'keyword.operator.new.tsx',
+      'keyword.operator.new.ts',
     ],
     settings: {
       foreground: Foregrounds.Red,

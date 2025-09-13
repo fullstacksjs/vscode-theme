@@ -94,4 +94,6 @@ const el = (
   </div>
 );
 
+const a = new Class();
+
 export default el;
