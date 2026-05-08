@@ -145,8 +145,8 @@ export const defaultColors: UIColors = {
   },
   selection: {
     default: withAlpha(white, 0.1),
-    focus: withAlpha(white, 0.2),
-    inactive: withAlpha(black, 0.25),
+    focus: withAlpha('#94a3c3', 0.2),
+    inactive: withAlpha('#ffffff', 0.05),
     found: withAlpha('#4fd9ff', 0.1),
   },
   danger: {

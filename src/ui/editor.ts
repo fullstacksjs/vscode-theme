@@ -31,7 +31,7 @@ export const editor = (colors: UIColors, palette: Palette): VSCodeTokens => ({
 
   'editor.placeholder.foreground': colors.border.muted,
   'editor.compositionBorder': false,
-  'editor.selectionBackground': colors.background.focus,
+  'editor.selectionBackground': colors.selection.focus,
   'editor.selectionForeground': colors.foreground.default,
 
   'editor.inactiveSelectionBackground': colors.selection.inactive,

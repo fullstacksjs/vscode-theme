@@ -58,6 +58,8 @@ const themes: ThemeConfig[] = [
       },
       selection: {
         found: withAlpha('#4f2933', 0.3),
+        focus: withAlpha('#94a3c3', 0.2),
+        inactive: withAlpha('#ffffff', 0.05),
       },
       warning: {
         foreground: '#ffb300',
@@ -68,6 +70,7 @@ const themes: ThemeConfig[] = [
         hover: '#443939',
       },
       border: {
+        default: '#000000',
         muted: '#444444',
       },
     },

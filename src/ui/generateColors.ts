@@ -1,7 +1,6 @@
 import type { Palette, UIColors } from '../colors.ts';
 import type { VSCodeTokens } from './VSCodeToken.ts';
 
-import { defaultColors, defaultPalette } from '../colors.ts';
 import { activityBar } from './activity-bar.ts';
 import { banner } from './banner.ts';
 import { base } from './base.ts';
