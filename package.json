@@ -57,9 +57,9 @@
     ]
   },
   "scripts": {
-    "dev": "node --watch --experimental-strip-types --watch-path src/ src/generate.ts",
+    "dev": "node --watch --watch-path src/ src/generate.ts",
     "verify": "eslint src/",
-    "build": "node --experimental-strip-types src/generate.ts && vsce package",
+    "build": "node src/generate.ts && vsce package",
     "publish": "vsce publish"
   },
   "devDependencies": {
