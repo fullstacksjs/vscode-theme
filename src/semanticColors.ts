@@ -6,31 +6,37 @@ import { Foregrounds } from './colors.ts';
  * doc: {@link https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#predefined-textmate-scope-mappings}
  */
 export const semanticTokenColors: SemanticTokenColors = {
-  type: {
+  'type': {
     foreground: Foregrounds.Blue,
   },
-  typeParameter: {
+  'type.terraform-provider': {
+    foreground: Foregrounds.Red,
+  },
+  'hcl-blockType': {
+    foreground: Foregrounds.Red,
+  },
+  'typeParameter': {
     foreground: Foregrounds.Blue,
   },
-  namespace: {
+  'namespace': {
     foreground: Foregrounds.Cyan,
   },
-  enum: {
+  'enum': {
     foreground: Foregrounds.Cyan,
   },
-  enumMember: {
+  'enumMember': {
     foreground: Foregrounds.Neutral,
   },
-  interface: {
+  'interface': {
     foreground: Foregrounds.Blue,
   },
-  annotation: {
+  'annotation': {
     foreground: Foregrounds.Yellow,
   },
-  variable: {
+  'variable': {
     foreground: Foregrounds.Neutral,
   },
-  field: {
+  'field': {
     foreground: Foregrounds.Yellow,
   },
 };
