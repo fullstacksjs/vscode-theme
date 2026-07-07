@@ -38,7 +38,7 @@ export const form = (colors: UIColors): VSCodeTokens => ({
 
   'inputOption.activeBackground': colors.background.focus,
   'inputOption.activeBorder': colors.transparent,
-  'inputOption.activeForeground': colors.foreground.default,
+  'inputOption.activeForeground': colors.primary.foreground,
   'inputOption.hoverBackground': colors.background.hover,
 
   'inputValidation.errorBackground': colors.background.elevated,
