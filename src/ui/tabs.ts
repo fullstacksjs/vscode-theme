@@ -28,7 +28,7 @@ export const tabs = (colors: UIColors): VSCodeTokens => ({
   'tab.lastPinnedBorder': false,
   'tab.inactiveBackground': colors.transparent,
   'tab.unfocusedInactiveBackground': colors.transparent,
-  'tab.inactiveForeground': colors.foreground.support,
+  'tab.inactiveForeground': colors.foreground.muted,
   'tab.unfocusedActiveForeground': colors.foreground.support,
   'tab.unfocusedInactiveForeground': colors.foreground.support,
   'tab.hoverBackground': colors.background.hover,
