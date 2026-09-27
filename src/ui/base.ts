@@ -2,8 +2,8 @@ import type { UIColors } from '../colors.ts';
 import type { VSCodeTokens } from './VSCodeToken.ts';
 
 export const base = (colors: UIColors): VSCodeTokens => ({
-  'contrastActiveBorder': colors.primary.foreground,
-  'contrastBorder': colors.border.default,
+  'contrastActiveBorder': false,
+  'contrastBorder': false,
   'focusBorder': colors.foreground.muted,
   'disabledForeground': colors.foreground.muted,
   'widget.border': colors.transparent,
