@@ -4,11 +4,14 @@ import type { VSCodeTokens } from './VSCodeToken.ts';
 export const form = (colors: UIColors): VSCodeTokens => ({
   'button.background': colors.primary.foreground,
   'button.foreground': colors.primary.onForeground,
+  'button.border': colors.transparent,
+  'button.separator': colors.border.muted,
   'button.hoverBackground': colors.primary.hover,
 
   'button.secondaryForeground': colors.secondary.onForeground,
   'button.secondaryBackground': colors.secondary.foreground,
   'button.secondaryHoverBackground': colors.secondary.hover,
+  'button.secondaryBorder': colors.transparent,
 
   'checkbox.background': colors.background.focus,
   'checkbox.foreground': colors.primary.foreground,
@@ -52,6 +55,17 @@ export const form = (colors: UIColors): VSCodeTokens => ({
   'inputValidation.warningBackground': colors.background.elevated,
   'inputValidation.warningForeground': colors.warning.foreground,
   'inputValidation.warningBorder': colors.warning.foreground,
+
+  'menu.background': colors.background.elevated,
+  'menu.foreground': colors.foreground.default,
+  'menu.selectionBackground': colors.background.focus,
+  'menu.selectionForeground': colors.foreground.default,
+  'menu.selectionBorder': colors.transparent,
+  'menu.separatorBackground': colors.border.default,
+  'menu.border': colors.border.default,
+  'menubar.selectionForeground': colors.foreground.default,
+  'menubar.selectionBackground': colors.background.hover,
+  'menubar.selectionBorder': colors.transparent,
 
   'progressBar.background': colors.primary.foreground,
 

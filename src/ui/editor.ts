@@ -5,6 +5,7 @@ import { withAlpha } from '../utils.ts';
 
 export const editor = (colors: UIColors, palette: Palette): VSCodeTokens => ({
   'scrollbar.shadow': colors.transparent,
+  'scrollbar.background': colors.transparent,
   'scrollbarSlider.activeBackground': colors.background.focus,
   'scrollbarSlider.background': colors.background.focus,
   'scrollbarSlider.hoverBackground': colors.background.hover,
@@ -17,6 +18,7 @@ export const editor = (colors: UIColors, palette: Palette): VSCodeTokens => ({
 
   'editor.background': colors.background.default,
   'editor.foreground': colors.foreground.default,
+  'editor.border': colors.border.default,
 
   'editorLineNumber.foreground': colors.foreground.muted,
   'editorLineNumber.activeForeground': colors.foreground.default,
@@ -61,6 +63,7 @@ export const editor = (colors: UIColors, palette: Palette): VSCodeTokens => ({
   'searchEditor.textInputBorder': colors.border.default,
   'editor.hoverHighlightBackground': colors.background.focus,
   'editor.lineHighlightBackground': colors.background.overlay,
+  'editor.inactiveLineHighlightBackground': colors.background.overlay,
   'editor.lineHighlightBorder': colors.transparent,
   'editor.rangeHighlightBackground': colors.background.overlay,
   'editor.rangeHighlightBorder': colors.transparent,
@@ -76,6 +79,7 @@ export const editor = (colors: UIColors, palette: Palette): VSCodeTokens => ({
   'editorWhitespace.foreground': colors.selection.default,
 
   'editorIndentGuide.background1': colors.selection.default,
+  'editorIndentGuide.background': colors.selection.default,
   'editorIndentGuide.background2': false,
   'editorIndentGuide.background3': false,
   'editorIndentGuide.background4': false,
@@ -83,6 +87,7 @@ export const editor = (colors: UIColors, palette: Palette): VSCodeTokens => ({
   'editorIndentGuide.background6': false,
 
   'editorIndentGuide.activeBackground1': colors.foreground.support,
+  'editorIndentGuide.activeBackground': colors.foreground.support,
   'editorIndentGuide.activeBackground2': false,
   'editorIndentGuide.activeBackground3': false,
   'editorIndentGuide.activeBackground4': false,
@@ -105,6 +110,18 @@ export const editor = (colors: UIColors, palette: Palette): VSCodeTokens => ({
   'editorLightBulbAi.foreground': palette.magenta,
   'editorBracketMatch.background': withAlpha(colors.tertiary.foreground, 0.1),
   'editorBracketMatch.border': colors.transparent,
+  'editorBracketMatch.foreground': colors.tertiary.foreground,
+
+  'editor.snippetTabstopHighlightBackground': colors.selection.default,
+  'editor.snippetTabstopHighlightBorder': colors.transparent,
+  'editor.snippetFinalTabstopHighlightBackground': colors.selection.focus,
+  'editor.snippetFinalTabstopHighlightBorder': colors.primary.foreground,
+
+  'breadcrumb.foreground': colors.foreground.support,
+  'breadcrumb.background': colors.background.default,
+  'breadcrumb.focusForeground': colors.foreground.default,
+  'breadcrumb.activeSelectionForeground': colors.primary.foreground,
+  'breadcrumbPicker.background': colors.background.elevated,
 
   'editorBracketPairGuide.activeBackground1': false,
   'editorBracketPairGuide.activeBackground2': false,

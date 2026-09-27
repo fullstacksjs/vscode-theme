@@ -14,6 +14,7 @@ export const scm = (colors: UIColors, palette: Palette): VSCodeTokens => {
     'editorGutter.deletedSecondaryBackground': deleted,
 
     'gitDecoration.modifiedResourceForeground': modified,
+    'gitDecoration.renamedResourceForeground': modified,
     'gitDecoration.stageModifiedResourceForeground': modified,
     'editorGutter.modifiedBackground': modified,
     'minimapGutter.modifiedBackground': modified,
@@ -28,6 +29,7 @@ export const scm = (colors: UIColors, palette: Palette): VSCodeTokens => {
     'gitDecoration.submoduleResourceForeground': palette.blue['600'],
     'gitDecoration.conflictingResourceForeground': palette.magenta['600'],
     'gitDecoration.ignoredResourceForeground': colors.foreground.muted,
+    'git.blame.editorDecorationForeground': colors.foreground.muted,
 
     'editorOverviewRuler.modifiedForeground': modified,
     'editorOverviewRuler.addedForeground': added,
@@ -39,6 +41,7 @@ export const scm = (colors: UIColors, palette: Palette): VSCodeTokens => {
     'editorGutter.commentRangeForeground': colors.border.default,
     'editorGutter.commentGlyphForeground': colors.foreground.default,
     'editorGutter.commentUnresolvedGlyphForeground': colors.tertiary.foreground,
+    'editorGutter.commentDraftGlyphForeground': colors.info.foreground,
 
     'diffEditor.insertedTextBackground': colors.success.background,
     'diffEditor.insertedTextBorder': colors.transparent,
@@ -75,6 +78,7 @@ export const scm = (colors: UIColors, palette: Palette): VSCodeTokens => {
     'editorOverviewRuler.incomingContentForeground': false,
     'editorOverviewRuler.commonContentForeground': false,
     'editorOverviewRuler.commentForeground': false,
+    'editorOverviewRuler.commentDraftForeground': colors.info.foreground,
     'editorOverviewRuler.commentUnresolvedForeground': false,
 
     'mergeEditor.change.background': colors.success.background,

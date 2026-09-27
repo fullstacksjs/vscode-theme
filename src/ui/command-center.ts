@@ -2,6 +2,7 @@ import type { UIColors } from '../colors.ts';
 import type { VSCodeTokens } from './VSCodeToken.ts';
 
 export const commandCenter = (colors: UIColors): VSCodeTokens => ({
+  'commandCenter.foreground': colors.foreground.support,
   'commandCenter.activeForeground': colors.foreground.default,
   'commandCenter.background': colors.background.focus,
   'commandCenter.activeBackground': colors.background.hover,

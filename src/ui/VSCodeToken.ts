@@ -36,6 +36,67 @@ export interface WindowBorder {
   'window.inactiveBorder'?: ColorConfig;
 }
 
+export interface ModernUIColors {
+  /** Background color of framed container surfaces in the modern layout. */
+  'surface.background'?: ColorConfig;
+  /** Foreground color of framed container surfaces in the modern layout. */
+  'surface.foreground'?: ColorConfig;
+  /** Border color of framed container surfaces in the modern layout. */
+  'surface.border'?: ColorConfig;
+  /** Border color of the editor surface in the modern layout. */
+  'editor.border'?: ColorConfig;
+  /** Border color of the panel surface in the modern layout. */
+  'modernPanel.border'?: ColorConfig;
+  /** Foreground color of sash grip handles in the modern layout. */
+  'modernSash.gripForeground'?: ColorConfig;
+  /** Background color of active tabs in the modern tab style. */
+  'modernTab.activeBackground'?: ColorConfig;
+  /** Foreground color of active tabs in the modern tab style. */
+  'modernTab.activeForeground'?: ColorConfig;
+  /** Background color of hovered tabs in the modern tab style. */
+  'modernTab.hoverBackground'?: ColorConfig;
+  /** Foreground color of hovered tabs in the modern tab style. */
+  'modernTab.hoverForeground'?: ColorConfig;
+  /** Background color of active editor tabs in the modern tab style. */
+  'modernEditorTab.activeBackground'?: ColorConfig;
+  /** Background color of actions on active editor tabs in the modern tab style. */
+  'modernEditorTab.activeActionBackground'?: ColorConfig;
+  /** Foreground color of active editor tabs in the modern tab style. */
+  'modernEditorTab.activeForeground'?: ColorConfig;
+  /** Background color of inactive editor tabs in the modern tab style. */
+  'modernEditorTab.inactiveBackground'?: ColorConfig;
+  /** Background color of hovered editor tabs in the modern tab style. */
+  'modernEditorTab.hoverBackground'?: ColorConfig;
+  /** Background color of actions on hovered editor tabs in the modern tab style. */
+  'modernEditorTab.hoverActionBackground'?: ColorConfig;
+  /** Foreground color of hovered editor tabs in the modern tab style. */
+  'modernEditorTab.hoverForeground'?: ColorConfig;
+  /** Background color of hovered active editor tabs in the modern tab style. */
+  'modernEditorTab.activeHoverBackground'?: ColorConfig;
+  /** Background color of actions on hovered active editor tabs in the modern tab style. */
+  'modernEditorTab.activeHoverActionBackground'?: ColorConfig;
+  /** Background color of actions on selected editor tabs in the modern tab style. */
+  'modernEditorTab.selectedActionBackground'?: ColorConfig;
+  /** Background color of the Activity Bar in the modern layout. */
+  'modernActivityBar.background'?: ColorConfig;
+  /** Background color of the Activity Bar in an inactive modern-layout window. */
+  'modernActivityBar.inactiveBackground'?: ColorConfig;
+  /** Background color of active Activity Bar items in the modern layout. */
+  'modernActivityBarItem.activeBackground'?: ColorConfig;
+  /** Foreground color of active Activity Bar items in the modern layout. */
+  'modernActivityBarItem.activeForeground'?: ColorConfig;
+  /** Background color of hovered Activity Bar items in the modern layout. */
+  'modernActivityBarItem.hoverBackground'?: ColorConfig;
+  /** Foreground color of hovered Activity Bar items in the modern layout. */
+  'modernActivityBarItem.hoverForeground'?: ColorConfig;
+  /** Border color of the Activity Bar in the modern layout. */
+  'modernActivityBar.border'?: ColorConfig;
+  /** Background color of the shell around modern workbench surfaces. */
+  'modernUI.shellBackground'?: ColorConfig;
+  /** Background color of the shell in an inactive modern-layout window. */
+  'modernUI.inactiveShellBackground'?: ColorConfig;
+}
+
 export interface TextColors {
   /** Background color for block quotes in text. */
   'textBlockQuote.background'?: ColorConfig;
@@ -51,6 +112,8 @@ export interface TextColors {
   'textPreformat.foreground'?: ColorConfig;
   /** Background color for preformatted text segments. */
   'textPreformat.background'?: ColorConfig;
+  /** Border color for preformatted text segments. */
+  'textPreformat.border'?: ColorConfig;
   /** Color for text separators. */
   'textSeparator.foreground'?: ColorConfig;
 }
@@ -79,6 +142,8 @@ export interface ButtonControl {
   'button.foreground'?: ColorConfig;
   /** Button border color. */
   'button.border'?: ColorConfig;
+  /** Button separator color. */
+  'button.separator'?: ColorConfig;
   /** Button background color when hovering. */
   'button.hoverBackground'?: ColorConfig;
   /** Secondary button foreground color. */
@@ -87,6 +152,8 @@ export interface ButtonControl {
   'button.secondaryBackground'?: ColorConfig;
   /** Secondary button background color when hovering. */
   'button.secondaryHoverBackground'?: ColorConfig;
+  /** Secondary button border color. */
+  'button.secondaryBorder'?: ColorConfig;
   /** Background color of checkbox widget. */
   'checkbox.background'?: ColorConfig;
   /** Background color of checkbox widget when the element it's in is selected. */
@@ -166,6 +233,8 @@ export interface InputControl {
 }
 
 export interface ScrollbarControl {
+  /** Scrollbar track background color. */
+  'scrollbar.background'?: ColorConfig;
   /** Scrollbar slider shadow to indicate that the view is scrolled. */
   'scrollbar.shadow'?: ColorConfig;
   /** Scrollbar slider background color when clicked on. */
@@ -537,6 +606,8 @@ export interface EditorColors {
   'editor.hoverHighlightBackground'?: ColorConfig;
   /** Background color for the highlight of line at the cursor position. */
   'editor.lineHighlightBackground'?: ColorConfig;
+  /** Background color for the current line when the editor is inactive. */
+  'editor.inactiveLineHighlightBackground'?: ColorConfig;
   /** Background color for the border around the line at the cursor position. */
   'editor.lineHighlightBorder'?: ColorConfig;
   /** Foreground color for the labels in the editor watermark. */
@@ -558,6 +629,8 @@ export interface EditorColors {
   /** Color of whitespace characters in the editor. */
   'editorWhitespace.foreground'?: ColorConfig;
   /** Color of the editor indentation guides. */
+  'editorIndentGuide.background'?: ColorConfig;
+  /** Color of the first editor indentation guide. */
   'editorIndentGuide.background1'?: ColorConfig;
   /** Color of the editor indentation guides (2). */
   'editorIndentGuide.background2'?: ColorConfig;
@@ -569,6 +642,8 @@ export interface EditorColors {
   'editorIndentGuide.background5'?: ColorConfig;
   /** Color of the editor indentation guides (6). */
   'editorIndentGuide.background6'?: ColorConfig;
+  /** Color of the active editor indentation guide. */
+  'editorIndentGuide.activeBackground'?: ColorConfig;
   /** Color of the active editor indentation guides (1). */
   'editorIndentGuide.activeBackground1'?: ColorConfig;
   /** Color of the active editor indentation guides (2). */
@@ -609,6 +684,8 @@ export interface EditorColors {
   'editorBracketMatch.background'?: ColorConfig;
   /** Color for matching brackets boxes. */
   'editorBracketMatch.border'?: ColorConfig;
+  /** Foreground color for matching brackets. */
+  'editorBracketMatch.foreground'?: ColorConfig;
   /** Foreground color of brackets (1). Requires enabling bracket pair colorization. */
   'editorBracketHighlight.foreground1'?: ColorConfig;
   /** Foreground color of brackets (2). Requires enabling bracket pair colorization. */
@@ -733,6 +810,8 @@ export interface EditorColors {
   'editorGutter.deletedBackground'?: ColorConfig;
   /** Editor gutter decoration color for commenting ranges. */
   'editorGutter.commentRangeForeground'?: ColorConfig;
+  /** Editor gutter decoration color for comment threads with draft comments. */
+  'editorGutter.commentDraftGlyphForeground'?: ColorConfig;
   /** Editor gutter decoration color for commenting glyphs. */
   'editorGutter.commentGlyphForeground'?: ColorConfig;
   /** Editor gutter decoration color for commenting glyphs for unresolved comment threads. */
@@ -877,6 +956,87 @@ export interface ChatColors {
   'chat.requestBubbleHoverBackground'?: ColorConfig;
   /** The foreground color of a chat checkpoint separator. */
   'chat.checkpointSeparator'?: ColorConfig;
+  /** Shimmer highlight for thinking and working labels. */
+  'chat.thinkingShimmer'?: ColorConfig;
+  /** Border color of the Chat Management editor sash. */
+  'chatManagement.sashBorder'?: ColorConfig;
+}
+
+export interface AgentSessionColors {
+  /** Background color of the agent sessions window. */
+  'agents.background'?: ColorConfig;
+  /** Background color of panels in the agent sessions window. */
+  'agentsPanel.background'?: ColorConfig;
+  /** Foreground color of panels in the agent sessions window. */
+  'agentsPanel.foreground'?: ColorConfig;
+  /** Border color of panels in the agent sessions window. */
+  'agentsPanel.border'?: ColorConfig;
+  /** Border color of cards in the agent sessions window. */
+  'agentsCard.border'?: ColorConfig;
+  /** Border color of the bottom panel in the agent sessions window. */
+  'agentsBottomPanel.border'?: ColorConfig;
+  /** Tint color of the agent sessions window background gradient. */
+  'agentsGradient.tintColor'?: ColorConfig;
+  /** Background color of the agent feedback editor widget. */
+  'agentFeedbackEditorWidget.background'?: ColorConfig;
+  /** Border color of the agent feedback editor widget. */
+  'agentFeedbackEditorWidget.border'?: ColorConfig;
+  /** Border color of the agent feedback input widget. */
+  'agentFeedbackInputWidget.border'?: ColorConfig;
+  /** Background color of the agent update button while downloading. */
+  'agentsUpdateButton.downloadingBackground'?: ColorConfig;
+  /** Background color of the agent update button after downloading. */
+  'agentsUpdateButton.downloadedBackground'?: ColorConfig;
+  /** Background color of the agent sessions chat input. */
+  'agentsChatInput.background'?: ColorConfig;
+  /** Foreground color of the agent sessions chat input. */
+  'agentsChatInput.foreground'?: ColorConfig;
+  /** Border color of the agent sessions chat input. */
+  'agentsChatInput.border'?: ColorConfig;
+  /** Focus border color of the agent sessions chat input. */
+  'agentsChatInput.focusBorder'?: ColorConfig;
+  /** Placeholder color of the agent sessions chat input. */
+  'agentsChatInput.placeholderForeground'?: ColorConfig;
+  /** Background color of the New Session button. */
+  'agentsNewSessionButton.background'?: ColorConfig;
+  /** Foreground color of the New Session button. */
+  'agentsNewSessionButton.foreground'?: ColorConfig;
+  /** Border color of the New Session button. */
+  'agentsNewSessionButton.border'?: ColorConfig;
+  /** Hover background color of the New Session button. */
+  'agentsNewSessionButton.hoverBackground'?: ColorConfig;
+  /** Background color of badges in the agent sessions window. */
+  'agentsBadge.background'?: ColorConfig;
+  /** Foreground color of badges in the agent sessions window. */
+  'agentsBadge.foreground'?: ColorConfig;
+  /** Background color of the agent sessions unread badge. */
+  'agentsUnreadBadge.background'?: ColorConfig;
+  /** Foreground color of the agent sessions unread badge. */
+  'agentsUnreadBadge.foreground'?: ColorConfig;
+  /** Background color of an active agent session view. */
+  'activeSessionView.background'?: ColorConfig;
+  /** Background color of an inactive agent session view. */
+  'inactiveSessionView.background'?: ColorConfig;
+  /** Foreground color of an active agent session view. */
+  'activeSessionView.foreground'?: ColorConfig;
+  /** Foreground color of an inactive agent session view. */
+  'inactiveSessionView.foreground'?: ColorConfig;
+  /** Foreground color of additions in the mobile agent diff. */
+  'agentsMobileDiff.addedForeground'?: ColorConfig;
+  /** Foreground color of modifications in the mobile agent diff. */
+  'agentsMobileDiff.modifiedForeground'?: ColorConfig;
+  /** Foreground color of deletions in the mobile agent diff. */
+  'agentsMobileDiff.deletedForeground'?: ColorConfig;
+  /** Foreground color of the read indicator in an agent session. */
+  'agentSessionReadIndicator.foreground'?: ColorConfig;
+  /** Border color of badges in selected agent session items. */
+  'agentSessionSelectedBadge.border'?: ColorConfig;
+  /** Border color of badges in selected unfocused agent session items. */
+  'agentSessionSelectedUnfocusedBadge.border'?: ColorConfig;
+  /** Background color of the title bar agent status indicator. */
+  'agentStatusIndicator.background'?: ColorConfig;
+  /** Border color of the Chat Customization Management editor sash. */
+  'aiCustomizationManagement.sashBorder'?: ColorConfig;
 }
 
 export interface InlineChatColors {
@@ -1042,6 +1202,8 @@ export interface MergeConflictsColors {
   'editorOverviewRuler.commonContentForeground'?: ColorConfig;
   /** Editor overview ruler decoration color for resolved comments. This color should be opaque. */
   'editorOverviewRuler.commentForeground'?: ColorConfig;
+  /** Editor overview ruler decoration color for comment threads with draft comments. */
+  'editorOverviewRuler.commentDraftForeground'?: ColorConfig;
   /** Editor overview ruler decoration color for unresolved comments. This color should be opaque. */
   'editorOverviewRuler.commentUnresolvedForeground'?: ColorConfig;
   /** The background color for changes. */
@@ -1294,6 +1456,8 @@ export interface ExtensionsColors {
   'extensionButton.hoverBackground'?: ColorConfig;
   /** Button separator color for extension actions. */
   'extensionButton.separator'?: ColorConfig;
+  /** Button border color for extension actions. */
+  'extensionButton.border'?: ColorConfig;
   /** Background color for the remote badge in the extensions view. */
   'extensionBadge.remoteBackground'?: ColorConfig;
   /** Foreground color for the remote badge in the extensions view. */
@@ -1308,6 +1472,8 @@ export interface ExtensionsColors {
   'extensionIcon.sponsorForeground'?: ColorConfig;
   /** The icon color for private extensions. */
   'extensionIcon.privateForeground'?: ColorConfig;
+  /** The icon color for starred MCP servers. */
+  'mcpIcon.starForeground'?: ColorConfig;
 }
 
 export interface QuickPickerColors {
@@ -1434,6 +1600,10 @@ export interface IntegratedTerminalColors {
   'terminalCommandGuide.foreground'?: ColorConfig;
   /** The foreground color for an alias icon. These icons will appear in the terminal suggest widget */
   'terminalSymbolIcon.aliasForeground'?: ColorConfig;
+  /** The foreground color for a branch icon in the terminal suggest widget. */
+  'terminalSymbolIcon.branchForeground'?: ColorConfig;
+  /** The foreground color for a commit icon in the terminal suggest widget. */
+  'terminalSymbolIcon.commitForeground'?: ColorConfig;
   /** The foreground color for an flag icon. These icons will appear in the terminal suggest widget */
   'terminalSymbolIcon.flagForeground'?: ColorConfig;
   /** The foreground color for an option icon. These icons will appear in the terminal suggest widget. */
@@ -1450,10 +1620,22 @@ export interface IntegratedTerminalColors {
   'terminalSymbolIcon.fileForeground'?: ColorConfig;
   /** The foreground color for a folder icon. These icons will appear in the terminal suggest widget. */
   'terminalSymbolIcon.folderForeground'?: ColorConfig;
+  /** The foreground color for a completed pull request icon in the terminal suggest widget. */
+  'terminalSymbolIcon.pullRequestDoneForeground'?: ColorConfig;
+  /** The foreground color for a pull request icon in the terminal suggest widget. */
+  'terminalSymbolIcon.pullRequestForeground'?: ColorConfig;
+  /** The foreground color for a remote icon in the terminal suggest widget. */
+  'terminalSymbolIcon.remoteForeground'?: ColorConfig;
+  /** The foreground color for a stash icon in the terminal suggest widget. */
+  'terminalSymbolIcon.stashForeground'?: ColorConfig;
+  /** The foreground color for plain text in the terminal suggest widget. */
+  'terminalSymbolIcon.symbolText'?: ColorConfig;
   /** The foreground color for a symbolic link file icon. These icons will appear in the terminal suggest widget. */
   'terminalSymbolIcon.symbolicLinkFileForeground'?: ColorConfig;
   /** The foreground color for a symbolic link folder icon. These icons will appear in the terminal suggest widget. */
   'terminalSymbolIcon.symbolicLinkFolderForeground'?: ColorConfig;
+  /** The foreground color for a tag icon in the terminal suggest widget. */
+  'terminalSymbolIcon.tagForeground'?: ColorConfig;
 }
 
 export interface DebugColors {
@@ -1933,6 +2115,19 @@ export interface GaugeColors {
   'gauge.errorForeground'?: ColorConfig;
 }
 
+export interface MarkdownColors {
+  /** Foreground color for note alerts in Markdown. */
+  'markdownAlert.note.foreground'?: ColorConfig;
+  /** Foreground color for tip alerts in Markdown. */
+  'markdownAlert.tip.foreground'?: ColorConfig;
+  /** Foreground color for important alerts in Markdown. */
+  'markdownAlert.important.foreground'?: ColorConfig;
+  /** Foreground color for warning alerts in Markdown. */
+  'markdownAlert.warning.foreground'?: ColorConfig;
+  /** Foreground color for caution alerts in Markdown. */
+  'markdownAlert.caution.foreground'?: ColorConfig;
+}
+
 /**
  * Colors in the workbench
  * doc: {@link https://code.visualstudio.com/api/references/theme-color}
@@ -1942,6 +2137,7 @@ export interface VSCodeTokens
   extends ContrastColors,
     BaseColors,
     WindowBorder,
+    ModernUIColors,
     TextColors,
     ActionColors,
     ButtonControl,
@@ -1959,6 +2155,7 @@ export interface VSCodeTokens
     EditorColors,
     DiffEditorColor,
     ChatColors,
+    AgentSessionColors,
     InlineChatColors,
     PanelChatColor,
     EditorWidgetColor,
@@ -1992,4 +2189,5 @@ export interface VSCodeTokens
     CommentsViewColors,
     ActionBarColor,
     SimpleFindWidgetColors,
-    GaugeColors {}
+    GaugeColors,
+    MarkdownColors {}

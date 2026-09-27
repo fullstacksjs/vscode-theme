@@ -13,6 +13,7 @@ export const minimap = (colors: UIColors): VSCodeTokens => ({
   'minimap.foregroundOpacity': withAlpha(colors.foreground.default, 0.67),
   'minimap.infoHighlight': colors.info.foreground,
   'minimap.chatEditHighlight': colors.background.focus,
+  'editorMinimap.inlineChatInserted': colors.success.foreground,
 
   'minimapSlider.background': colors.background.overlay,
   'minimapSlider.hoverBackground': colors.background.hover,

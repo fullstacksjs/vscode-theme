@@ -20,7 +20,7 @@
     "theme": "dark"
   },
   "engines": {
-    "vscode": "^1.55.0"
+    "vscode": "^1.139.0"
   },
   "categories": [
     "Themes"
@@ -59,13 +59,13 @@
   "scripts": {
     "dev": "node --watch --watch-path src/ src/generate.ts",
     "verify": "eslint src/",
-    "build": "node src/generate.ts && vsce package",
-    "publish": "vsce publish"
+    "build": "node src/generate.ts && vsce package --no-dependencies",
+    "publish": "vsce publish --no-dependencies"
   },
   "devDependencies": {
     "@fullstacksjs/eslint-config": "13.2.2",
     "@types/node": "24.2.1",
-    "@types/vscode": "1.55.0",
+    "@types/vscode": "1.138.0",
     "@vscode/vsce": "3.6.0",
     "eslint": "9.33.0",
     "prettier": "3.6.2",

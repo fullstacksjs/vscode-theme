@@ -45,6 +45,7 @@ export const statusBar = (colors: UIColors): VSCodeTokens => ({
   'statusBar.focusBorder': colors.primary.foreground,
 
   'statusBarItem.offlineBackground': colors.unknown,
+  'statusBarItem.offlineForeground': colors.foreground.support,
   'statusBarItem.offlineHoverForeground': colors.unknown,
   'statusBarItem.offlineHoverBackground': colors.unknown,
 });
