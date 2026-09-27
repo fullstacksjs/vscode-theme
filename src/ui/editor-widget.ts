@@ -2,6 +2,11 @@ import type { UIColors } from '../colors.ts';
 import type { VSCodeTokens } from './VSCodeToken.ts';
 
 export const editorWidget = (colors: UIColors): VSCodeTokens => ({
+  'editorActionList.background': colors.background.elevated,
+  'editorActionList.foreground': colors.foreground.default,
+  'editorActionList.focusForeground': colors.foreground.default,
+  'editorActionList.focusBackground': colors.background.focus,
+
   'editorWidget.foreground': colors.foreground.default,
   'editorWidget.background': colors.background.elevated,
   'editorWidget.border': colors.background.hover,

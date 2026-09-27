@@ -14,5 +14,12 @@ export const text = (colors: UIColors): VSCodeTokens => ({
 
   'textPreformat.foreground': colors.primary.foreground,
   'textPreformat.background': colors.background.focus,
+  'textPreformat.border': colors.border.default,
   'textSeparator.foreground': colors.foreground.default,
+
+  'markdownAlert.note.foreground': colors.info.foreground,
+  'markdownAlert.tip.foreground': colors.success.foreground,
+  'markdownAlert.important.foreground': colors.tertiary.foreground,
+  'markdownAlert.warning.foreground': colors.warning.foreground,
+  'markdownAlert.caution.foreground': colors.danger.foreground,
 });

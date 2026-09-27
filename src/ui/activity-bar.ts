@@ -24,4 +24,16 @@ export const activityBar = (colors: UIColors): VSCodeTokens => ({
 
   'activityErrorBadge.foreground': colors.danger.foreground,
   'activityErrorBadge.background': colors.background.default,
+
+  'profileBadge.background': colors.secondary.foreground,
+  'profileBadge.foreground': colors.secondary.onForeground,
+  'profiles.sashBorder': colors.border.default,
+
+  'modernActivityBar.background': colors.background.elevated,
+  'modernActivityBar.inactiveBackground': colors.background.default,
+  'modernActivityBar.border': colors.border.default,
+  'modernActivityBarItem.activeBackground': colors.background.focus,
+  'modernActivityBarItem.activeForeground': colors.foreground.default,
+  'modernActivityBarItem.hoverBackground': colors.background.hover,
+  'modernActivityBarItem.hoverForeground': colors.foreground.default,
 });

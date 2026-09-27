@@ -4,6 +4,7 @@ import type { VSCodeTokens } from './VSCodeToken.ts';
 export const panel = (colors: UIColors): VSCodeTokens => ({
   'panel.background': colors.background.default,
   'panel.border': colors.border.default,
+  'modernPanel.border': colors.border.default,
   'panel.dropBorder': colors.primary.foreground,
   'panelTitle.activeBorder': colors.primary.foreground,
   'panelTitle.activeForeground': colors.foreground.default,

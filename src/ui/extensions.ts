@@ -9,6 +9,7 @@ export const extensions = (colors: UIColors): VSCodeTokens => ({
   'extensionButton.foreground': false,
   'extensionButton.hoverBackground': false,
   'extensionButton.separator': colors.border.default,
+  'extensionButton.border': colors.transparent,
   'extensionBadge.remoteBackground': false,
   'extensionBadge.remoteForeground': false,
   'extensionIcon.starForeground': false,
@@ -16,4 +17,5 @@ export const extensions = (colors: UIColors): VSCodeTokens => ({
   'extensionIcon.preReleaseForeground': colors.tertiary.foreground,
   'extensionIcon.sponsorForeground': colors.unknown,
   'extensionIcon.privateForeground': colors.unknown,
+  'mcpIcon.starForeground': colors.warning.foreground,
 });
