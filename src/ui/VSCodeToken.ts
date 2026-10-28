@@ -2134,7 +2134,8 @@ export interface MarkdownColors {
  * src: {@link https://github.com/microsoft/vscode/commits/main/src/vs/platform/theme/common/colorRegistry.ts}
  */
 export interface VSCodeTokens
-  extends ActionBarColor,
+  extends
+    ActionBarColor,
     ActionColors,
     ActivityBar,
     AgentSessionColors,
